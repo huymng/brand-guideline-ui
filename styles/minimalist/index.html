@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist - Brand Style Guidelines</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="../../index.html" class="nav__back">Back</a>
+        <span class="nav__title">Minimalist</span>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__content">
+            <p class="hero__label">Style Guidelines</p>
+            <h1 class="hero__title">Minimalist</h1>
+            <p class="hero__description">Less, but better. The minimalist approach strips away the unnecessary, leaving only what truly matters. Clean typography, generous whitespace, and purposeful design.</p>
+            <a href="#colors" class="btn btn--primary">Explore</a>
+        </div>
+    </section>
+
+    <!-- Color Palette -->
+    <section class="section" id="colors">
+        <div class="section__header">
+            <p class="section__label">01</p>
+            <h2 class="section__title">Color Palette</h2>
+        </div>
+        <p class="section__intro">A restrained palette that lets content breathe. Black for text, white for space, and a single accent for emphasis.</p>
+
+        <div class="color-grid">
+            <div class="color-card" data-color="#ffffff">
+                <div class="color-card__preview" style="background: #ffffff"></div>
+                <div class="color-card__info">
+                    <span class="color-card__name">White</span>
+                    <span class="color-card__hex">#FFFFFF</span>
+                    <span class="color-card__use">Primary background</span>
+                </div>
+            </div>
+            <div class="color-card" data-color="#1a1a1a">
+                <div class="color-card__preview" style="background: #1a1a1a"></div>
+                <div class="color-card__info">
+                    <span class="color-card__name">Black</span>
+                    <span class="color-card__hex">#1A1A1A</span>
+                    <span class="color-card__use">Primary text</span>
+                </div>
+            </div>
+            <div class="color-card" data-color="#f5f5f5">
+                <div class="color-card__preview" style="background: #f5f5f5"></div>
+                <div class="color-card__info">
+                    <span class="color-card__name">Light Gray</span>
+                    <span class="color-card__hex">#F5F5F5</span>
+                    <span class="color-card__use">Secondary background</span>
+                </div>
+            </div>
+            <div class="color-card" data-color="#666666">
+                <div class="color-card__preview" style="background: #666666"></div>
+                <div class="color-card__info">
+                    <span class="color-card__name">Gray</span>
+                    <span class="color-card__hex">#666666</span>
+                    <span class="color-card__use">Secondary text</span>
+                </div>
+            </div>
+            <div class="color-card" data-color="#e0e0e0">
+                <div class="color-card__preview" style="background: #e0e0e0"></div>
+                <div class="color-card__info">
+                    <span class="color-card__name">Border Gray</span>
+                    <span class="color-card__hex">#E0E0E0</span>
+                    <span class="color-card__use">Borders & dividers</span>
+                </div>
+            </div>
+            <div class="color-card" data-color="#0066ff">
+                <div class="color-card__preview" style="background: #0066ff"></div>
+                <div class="color-card__info">
+                    <span class="color-card__name">Accent Blue</span>
+                    <span class="color-card__hex">#0066FF</span>
+                    <span class="color-card__use">Links & actions</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copy-toast" id="copyToast">Copied to clipboard</div>
+    </section>
+
+    <!-- Typography -->
+    <section class="section section--gray" id="typography">
+        <div class="section__header">
+            <p class="section__label">02</p>
+            <h2 class="section__title">Typography</h2>
+        </div>
+        <p class="section__intro">Inter brings clarity and neutrality. Its clean letterforms disappear, letting the message take center stage.</p>
+
+        <div class="type-showcase">
+            <div class="type-card">
+                <span class="type-card__label">Primary Typeface</span>
+                <h3 class="type-card__name">Inter</h3>
+                <p class="type-card__sample">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                <p class="type-card__sample">abcdefghijklmnopqrstuvwxyz</p>
+                <p class="type-card__sample">0123456789</p>
+                <div class="type-card__weights">
+                    <span class="weight-light">Light 300</span>
+                    <span class="weight-regular">Regular 400</span>
+                    <span class="weight-medium">Medium 500</span>
+                    <span class="weight-semibold">Semibold 600</span>
+                    <span class="weight-bold">Bold 700</span>
+                </div>
+                <a href="https://fonts.google.com/specimen/Inter" class="type-card__link" target="_blank">Get Inter from Google Fonts</a>
+            </div>
+        </div>
+
+        <div class="type-scale">
+            <h4 class="type-scale__title">Type Scale</h4>
+            <div class="type-scale__item">
+                <div class="type-scale__meta">
+                    <span class="type-scale__label">Display</span>
+                    <span class="type-scale__specs">72px / 600</span>
+                </div>
+                <span class="type-scale__preview display">Aa</span>
+            </div>
+            <div class="type-scale__item">
+                <div class="type-scale__meta">
+                    <span class="type-scale__label">Heading 1</span>
+                    <span class="type-scale__specs">48px / 600</span>
+                </div>
+                <span class="type-scale__preview h1">Aa</span>
+            </div>
+            <div class="type-scale__item">
+                <div class="type-scale__meta">
+                    <span class="type-scale__label">Heading 2</span>
+                    <span class="type-scale__specs">32px / 600</span>
+                </div>
+                <span class="type-scale__preview h2">Aa</span>
+            </div>
+            <div class="type-scale__item">
+                <div class="type-scale__meta">
+                    <span class="type-scale__label">Heading 3</span>
+                    <span class="type-scale__specs">24px / 500</span>
+                </div>
+                <span class="type-scale__preview h3">Aa</span>
+            </div>
+            <div class="type-scale__item">
+                <div class="type-scale__meta">
+                    <span class="type-scale__label">Body</span>
+                    <span class="type-scale__specs">16px / 400</span>
+                </div>
+                <span class="type-scale__preview body">The quick brown fox jumps over the lazy dog.</span>
+            </div>
+            <div class="type-scale__item">
+                <div class="type-scale__meta">
+                    <span class="type-scale__label">Small</span>
+                    <span class="type-scale__specs">14px / 400</span>
+                </div>
+                <span class="type-scale__preview small">Supporting text and captions</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Components -->
+    <section class="section" id="components">
+        <div class="section__header">
+            <p class="section__label">03</p>
+            <h2 class="section__title">Components</h2>
+        </div>
+        <p class="section__intro">Functional elements that prioritize usability over decoration. Every component serves a clear purpose.</p>
+
+        <div class="component-group">
+            <h3 class="component-group__title">Buttons</h3>
+            <div class="component-row">
+                <button class="btn btn--primary">Primary</button>
+                <button class="btn btn--secondary">Secondary</button>
+                <button class="btn btn--ghost">Ghost</button>
+                <button class="btn btn--primary" disabled>Disabled</button>
+            </div>
+        </div>
+
+        <div class="component-group">
+            <h3 class="component-group__title">Form Inputs</h3>
+            <div class="component-row component-row--inputs">
+                <div class="input-group">
+                    <label class="input-label">Email</label>
+                    <input type="email" class="input" placeholder="you@example.com">
+                </div>
+                <div class="input-group">
+                    <label class="input-label">Category</label>
+                    <select class="select">
+                        <option>Select an option</option>
+                        <option>Design</option>
+                        <option>Development</option>
+                        <option>Marketing</option>
+                    </select>
+                </div>
+            </div>
+            <div class="component-row">
+                <label class="checkbox">
+                    <input type="checkbox" checked>
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__label">Remember me</span>
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox">
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__label">Subscribe to updates</span>
+                </label>
+            </div>
+            <div class="component-row">
+                <label class="toggle">
+                    <input type="checkbox" checked>
+                    <span class="toggle__track"></span>
+                    <span class="toggle__label">Dark mode</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="component-group">
+            <h3 class="component-group__title">Cards</h3>
+            <div class="card-grid">
+                <div class="card">
+                    <span class="card__number">01</span>
+                    <h4 class="card__title">Simplicity</h4>
+                    <p class="card__text">Remove the unnecessary so that the necessary may speak. Good design is as little design as possible.</p>
+                </div>
+                <div class="card">
+                    <span class="card__number">02</span>
+                    <h4 class="card__title">Clarity</h4>
+                    <p class="card__text">Every element should have a purpose. If it doesn't add value, it subtracts from it.</p>
+                </div>
+                <div class="card">
+                    <span class="card__number">03</span>
+                    <h4 class="card__title">Function</h4>
+                    <p class="card__text">Form follows function. Design should serve the user, not the designer's ego.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="component-group">
+            <h3 class="component-group__title">Tags & Badges</h3>
+            <div class="component-row">
+                <span class="tag">Design</span>
+                <span class="tag">Typography</span>
+                <span class="tag">Minimal</span>
+                <span class="badge">New</span>
+                <span class="badge badge--success">Active</span>
+                <span class="badge badge--warning">Pending</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usage Guidelines -->
+    <section class="section section--gray" id="usage">
+        <div class="section__header">
+            <p class="section__label">04</p>
+            <h2 class="section__title">Usage Guidelines</h2>
+        </div>
+        <p class="section__intro">Principles for achieving visual clarity and functional elegance.</p>
+
+        <div class="guidelines-grid">
+            <div class="guideline guideline--do">
+                <h4 class="guideline__title">Do</h4>
+                <ul class="guideline__list">
+                    <li>Use generous whitespace to create visual hierarchy</li>
+                    <li>Limit your color palette to 2-3 colors maximum</li>
+                    <li>Choose one typeface and use weight for contrast</li>
+                    <li>Align elements to a consistent grid</li>
+                    <li>Let content determine the design, not vice versa</li>
+                    <li>Use subtle animations for feedback only</li>
+                </ul>
+            </div>
+            <div class="guideline guideline--dont">
+                <h4 class="guideline__title">Don't</h4>
+                <ul class="guideline__list">
+                    <li>Add decorative elements without purpose</li>
+                    <li>Use multiple typefaces or font weights arbitrarily</li>
+                    <li>Crowd elements together without breathing room</li>
+                    <li>Apply effects like shadows, gradients excessively</li>
+                    <li>Sacrifice readability for aesthetics</li>
+                    <li>Over-animate or add unnecessary motion</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="use-cases">
+            <h4 class="use-cases__title">Perfect For</h4>
+            <div class="use-cases__grid">
+                <div class="use-case">
+                    <span class="use-case__text">Portfolio sites</span>
+                </div>
+                <div class="use-case">
+                    <span class="use-case__text">Editorial platforms</span>
+                </div>
+                <div class="use-case">
+                    <span class="use-case__text">Product pages</span>
+                </div>
+                <div class="use-case">
+                    <span class="use-case__text">Documentation</span>
+                </div>
+                <div class="use-case">
+                    <span class="use-case__text">Photography</span>
+                </div>
+                <div class="use-case">
+                    <span class="use-case__text">Architecture</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo -->
+    <section class="section" id="demo">
+        <div class="section__header">
+            <p class="section__label">05</p>
+            <h2 class="section__title">Interactive Demo</h2>
+        </div>
+        <p class="section__intro">Experience the subtle interactions that make minimal design feel alive.</p>
+
+        <div class="demo-area">
+            <div class="demo-card">
+                <div class="demo-card__image"></div>
+                <div class="demo-card__content">
+                    <span class="demo-card__category">Design</span>
+                    <h3 class="demo-card__title">The Power of Whitespace</h3>
+                    <p class="demo-card__excerpt">How empty space can communicate more than content itself.</p>
+                    <a href="#" class="demo-card__link">Read more</a>
+                </div>
+            </div>
+            <div class="demo-card">
+                <div class="demo-card__image"></div>
+                <div class="demo-card__content">
+                    <span class="demo-card__category">Typography</span>
+                    <h3 class="demo-card__title">One Typeface Is Enough</h3>
+                    <p class="demo-card__excerpt">Mastering hierarchy with a single font family.</p>
+                    <a href="#" class="demo-card__link">Read more</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="quote-block">
+            <blockquote class="quote">
+                <p>"Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away."</p>
+                <cite>Antoine de Saint-Exupery</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <p class="footer__title">Minimalist Style Guidelines</p>
+            <p class="footer__credits">Typography: Inter via Google Fonts</p>
+            <a href="../../index.html" class="footer__link">Back to Gallery</a>
+        </div>
+    </footer>
+
+    <script src="effects.js"></script>
+</body>
+</html>

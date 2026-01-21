@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRUTALIST - Brand Style Guidelines</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor Trail -->
+    <div class="cursor-trail" id="cursorTrail"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="../../index.html" class="nav__back">[ BACK ]</a>
+        <marquee class="nav__marquee" behavior="scroll" direction="left">BRUTALIST STYLE GUIDELINES /// RAW DESIGN /// NO RULES /// BRUTALIST STYLE GUIDELINES ///</marquee>
+        <span class="nav__title">BRUTALIST</span>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__bg">
+            <span>BRUTALIST</span>
+            <span>BRUTALIST</span>
+            <span>BRUTALIST</span>
+        </div>
+        <div class="hero__content">
+            <h1 class="hero__title">
+                <span class="hero__title-line">BRUT</span>
+                <span class="hero__title-line hero__title-line--outline">ALIST</span>
+            </h1>
+            <p class="hero__tagline">RAW. HONEST. UNAPOLOGETIC.</p>
+            <p class="hero__description">Brutalism rejects polish and embraces the raw. No rounded corners. No subtle gradients. Just bold statements and functional honesty.</p>
+            <div class="hero__buttons">
+                <button class="btn btn--primary">ENTER</button>
+                <button class="btn btn--secondary">OR DON'T</button>
+            </div>
+        </div>
+        <div class="hero__stamp">
+            <span>EST.</span>
+            <span>2024</span>
+        </div>
+    </section>
+
+    <!-- Color Palette -->
+    <section class="section" id="colors">
+        <div class="section__header">
+            <h2 class="section__title">COLORS</h2>
+            <span class="section__number">001</span>
+        </div>
+        <p class="section__intro">PRIMARY COLORS ONLY. NO PASTELS. NO COMPROMISE.</p>
+
+        <div class="color-grid">
+            <div class="color-card" data-color="#ffffff">
+                <div class="color-card__preview" style="background: #ffffff">
+                    <span class="color-card__label">WHITE</span>
+                </div>
+                <div class="color-card__info">
+                    <span class="color-card__hex">#FFFFFF</span>
+                    <span class="color-card__use">BACKGROUND</span>
+                </div>
+            </div>
+            <div class="color-card" data-color="#000000">
+                <div class="color-card__preview" style="background: #000000">
+                    <span class="color-card__label" style="color: #fff">BLACK</span>
+                </div>
+                <div class="color-card__info">
+                    <span class="color-card__hex">#000000</span>
+                    <span class="color-card__use">TEXT / BORDERS</span>
+                </div>
+            </div>
+            <div class="color-card" data-color="#ff0000">
+                <div class="color-card__preview" style="background: #ff0000">
+                    <span class="color-card__label">RED</span>
+                </div>
+                <div class="color-card__info">
+                    <span class="color-card__hex">#FF0000</span>
+                    <span class="color-card__use">ACCENT / DANGER</span>
+                </div>
+            </div>
+            <div class="color-card" data-color="#0000ff">
+                <div class="color-card__preview" style="background: #0000ff">
+                    <span class="color-card__label" style="color: #fff">BLUE</span>
+                </div>
+                <div class="color-card__info">
+                    <span class="color-card__hex">#0000FF</span>
+                    <span class="color-card__use">LINKS / INFO</span>
+                </div>
+            </div>
+            <div class="color-card" data-color="#ffff00">
+                <div class="color-card__preview" style="background: #ffff00">
+                    <span class="color-card__label">YELLOW</span>
+                </div>
+                <div class="color-card__info">
+                    <span class="color-card__hex">#FFFF00</span>
+                    <span class="color-card__use">HIGHLIGHT</span>
+                </div>
+            </div>
+            <div class="color-card" data-color="#808080">
+                <div class="color-card__preview" style="background: #808080">
+                    <span class="color-card__label">GRAY</span>
+                </div>
+                <div class="color-card__info">
+                    <span class="color-card__hex">#808080</span>
+                    <span class="color-card__use">DISABLED</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copy-toast" id="copyToast">COPIED !!!</div>
+    </section>
+
+    <!-- Typography -->
+    <section class="section section--black" id="typography">
+        <div class="section__header">
+            <h2 class="section__title">TYPOGRAPHY</h2>
+            <span class="section__number">002</span>
+        </div>
+        <p class="section__intro">SYSTEM FONTS. NO CUSTOM FONTS. IF IT'S UGLY, IT'S HONEST.</p>
+
+        <div class="type-showcase">
+            <div class="type-card">
+                <span class="type-card__label">PRIMARY</span>
+                <h3 class="type-card__name">Arial Black</h3>
+                <p class="type-card__sample">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                <p class="type-card__sample">abcdefghijklmnopqrstuvwxyz</p>
+                <p class="type-card__sample">0123456789 !@#$%</p>
+            </div>
+            <div class="type-card type-card--mono">
+                <span class="type-card__label">SECONDARY</span>
+                <h3 class="type-card__name font-mono">Courier New</h3>
+                <p class="type-card__sample font-mono">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                <p class="type-card__sample font-mono">abcdefghijklmnopqrstuvwxyz</p>
+                <p class="type-card__sample font-mono">0123456789 !@#$%</p>
+            </div>
+        </div>
+
+        <div class="type-scale">
+            <div class="type-scale__item">
+                <span class="type-scale__label">XXL</span>
+                <span class="type-scale__preview xxl">HUGE</span>
+            </div>
+            <div class="type-scale__item">
+                <span class="type-scale__label">XL</span>
+                <span class="type-scale__preview xl">LARGE</span>
+            </div>
+            <div class="type-scale__item">
+                <span class="type-scale__label">L</span>
+                <span class="type-scale__preview l">MEDIUM</span>
+            </div>
+            <div class="type-scale__item">
+                <span class="type-scale__label">M</span>
+                <span class="type-scale__preview m">Small but still readable</span>
+            </div>
+            <div class="type-scale__item">
+                <span class="type-scale__label">S</span>
+                <span class="type-scale__preview s font-mono">Monospace for code and data</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Components -->
+    <section class="section" id="components">
+        <div class="section__header">
+            <h2 class="section__title">COMPONENTS</h2>
+            <span class="section__number">003</span>
+        </div>
+        <p class="section__intro">FUNCTIONAL. OBVIOUS. NOTHING HIDDEN.</p>
+
+        <div class="component-group">
+            <h3 class="component-group__title">[ BUTTONS ]</h3>
+            <div class="component-row">
+                <button class="btn btn--primary">CLICK ME</button>
+                <button class="btn btn--secondary">SECONDARY</button>
+                <button class="btn btn--danger">DANGER!!!</button>
+                <button class="btn btn--primary" disabled>DISABLED</button>
+            </div>
+        </div>
+
+        <div class="component-group">
+            <h3 class="component-group__title">[ INPUTS ]</h3>
+            <div class="component-row">
+                <input type="text" class="input" placeholder="TYPE HERE...">
+                <select class="select">
+                    <option>SELECT ONE</option>
+                    <option>OPTION A</option>
+                    <option>OPTION B</option>
+                    <option>OPTION C</option>
+                </select>
+            </div>
+            <div class="component-row">
+                <label class="checkbox">
+                    <input type="checkbox" checked>
+                    <span class="checkbox__box">[X]</span>
+                    <span class="checkbox__label">CHECKED</span>
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox">
+                    <span class="checkbox__box">[ ]</span>
+                    <span class="checkbox__label">UNCHECKED</span>
+                </label>
+            </div>
+            <div class="component-row">
+                <textarea class="textarea" placeholder="WRITE SOMETHING LONG..."></textarea>
+            </div>
+        </div>
+
+        <div class="component-group">
+            <h3 class="component-group__title">[ CARDS ]</h3>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card__header">
+                        <span class="card__number">01</span>
+                        <span class="card__tag">NEW</span>
+                    </div>
+                    <h4 class="card__title">RAW HONESTY</h4>
+                    <p class="card__text">Brutalism doesn't hide structure. It celebrates it. Every element serves a purpose.</p>
+                    <a href="#" class="card__link">READ MORE →</a>
+                </div>
+                <div class="card card--inverted">
+                    <div class="card__header">
+                        <span class="card__number">02</span>
+                        <span class="card__tag card__tag--red">HOT</span>
+                    </div>
+                    <h4 class="card__title">FORM = FUNCTION</h4>
+                    <p class="card__text">No decoration for decoration's sake. If it looks ugly but works, it's good design.</p>
+                    <a href="#" class="card__link">READ MORE →</a>
+                </div>
+                <div class="card">
+                    <div class="card__header">
+                        <span class="card__number">03</span>
+                    </div>
+                    <h4 class="card__title">BREAK RULES</h4>
+                    <p class="card__text">Overlapping elements, broken grids, harsh contrasts. Rules are meant to be questioned.</p>
+                    <a href="#" class="card__link">READ MORE →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="component-group">
+            <h3 class="component-group__title">[ TAGS ]</h3>
+            <div class="component-row">
+                <span class="tag">DEFAULT</span>
+                <span class="tag tag--red">URGENT</span>
+                <span class="tag tag--blue">INFO</span>
+                <span class="tag tag--yellow">WARNING</span>
+                <span class="tag tag--outline">OUTLINE</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usage Guidelines -->
+    <section class="section section--red" id="usage">
+        <div class="section__header">
+            <h2 class="section__title">RULES</h2>
+            <span class="section__number">004</span>
+        </div>
+        <p class="section__intro">THESE ARE GUIDELINES. BREAK THEM IF YOU WANT.</p>
+
+        <div class="guidelines-grid">
+            <div class="guideline guideline--do">
+                <h4 class="guideline__title">DO:</h4>
+                <ul class="guideline__list">
+                    <li>→ USE HIGH CONTRAST</li>
+                    <li>→ MAKE TEXT READABLE</li>
+                    <li>→ BE INTENTIONALLY UGLY</li>
+                    <li>→ USE SYSTEM FONTS</li>
+                    <li>→ EMBRACE ASYMMETRY</li>
+                    <li>→ MAKE IT FUNCTIONAL</li>
+                </ul>
+            </div>
+            <div class="guideline guideline--dont">
+                <h4 class="guideline__title">DON'T:</h4>
+                <ul class="guideline__list">
+                    <li>× ROUND YOUR CORNERS</li>
+                    <li>× USE SUBTLE GRADIENTS</li>
+                    <li>× ADD UNNECESSARY ANIMATION</li>
+                    <li>× MAKE IT "PRETTY"</li>
+                    <li>× FOLLOW TRENDS BLINDLY</li>
+                    <li>× APOLOGIZE FOR THE AESTHETIC</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="use-cases">
+            <h4 class="use-cases__title">WORKS FOR:</h4>
+            <div class="use-cases__grid">
+                <div class="use-case">ART PORTFOLIOS</div>
+                <div class="use-case">EXPERIMENTAL SITES</div>
+                <div class="use-case">MUSIC / BANDS</div>
+                <div class="use-case">ZINES / MAGAZINES</div>
+                <div class="use-case">PERSONAL BLOGS</div>
+                <div class="use-case">ANTI-ESTABLISHMENT</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo -->
+    <section class="section" id="demo">
+        <div class="section__header">
+            <h2 class="section__title">DEMO</h2>
+            <span class="section__number">005</span>
+        </div>
+        <p class="section__intro">CLICK THINGS. BREAK THINGS. HAVE FUN.</p>
+
+        <div class="demo-area">
+            <div class="demo-box" id="demoBox">
+                <span>CLICK ME</span>
+            </div>
+
+            <div class="demo-controls">
+                <button class="btn btn--secondary" id="rotateBtn">ROTATE</button>
+                <button class="btn btn--secondary" id="colorBtn">CHANGE COLOR</button>
+                <button class="btn btn--secondary" id="sizeBtn">RESIZE</button>
+                <button class="btn btn--danger" id="resetBtn">RESET</button>
+            </div>
+        </div>
+
+        <div class="demo-text">
+            <div class="scrolling-text">
+                <span>THIS IS BRUTALIST DESIGN • THIS IS BRUTALIST DESIGN • THIS IS BRUTALIST DESIGN • </span>
+                <span>THIS IS BRUTALIST DESIGN • THIS IS BRUTALIST DESIGN • THIS IS BRUTALIST DESIGN • </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <p class="footer__title">BRUTALIST</p>
+            <p class="footer__year">2024</p>
+        </div>
+        <div class="footer__links">
+            <a href="../../index.html" class="footer__link">[ BACK TO GALLERY ]</a>
+        </div>
+        <div class="footer__disclaimer">
+            <p>NO FONTS WERE HARMED IN THE MAKING OF THIS STYLE GUIDE.</p>
+            <p>SYSTEM FONTS: ARIAL BLACK, COURIER NEW</p>
+        </div>
+    </footer>
+
+    <script src="effects.js"></script>
+</body>
+</html>

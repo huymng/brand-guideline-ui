@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate SaaS - Brand Style Guidelines</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav__container">
+            <a href="../../index.html" class="nav__logo">
+                <span class="nav__logo-icon"></span>
+                <span class="nav__logo-text">StyleGuide</span>
+            </a>
+            <div class="nav__links">
+                <a href="#colors" class="nav__link">Colors</a>
+                <a href="#typography" class="nav__link">Typography</a>
+                <a href="#components" class="nav__link">Components</a>
+                <a href="#usage" class="nav__link">Guidelines</a>
+            </div>
+            <a href="../../index.html" class="btn btn--secondary btn--small">Back to Gallery</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__container">
+            <span class="hero__badge">Style Guidelines</span>
+            <h1 class="hero__title">Corporate SaaS</h1>
+            <p class="hero__description">Professional, trustworthy, and conversion-focused. The design language that powers enterprise software and drives business growth.</p>
+            <div class="hero__actions">
+                <a href="#colors" class="btn btn--primary btn--large">Explore Guidelines</a>
+                <a href="#demo" class="btn btn--ghost btn--large">View Demo</a>
+            </div>
+            <div class="hero__stats">
+                <div class="stat">
+                    <span class="stat__number" data-target="98">0</span>
+                    <span class="stat__unit">%</span>
+                    <span class="stat__label">Conversion Rate</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number" data-target="500">0</span>
+                    <span class="stat__unit">+</span>
+                    <span class="stat__label">Enterprise Clients</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number" data-target="4.9">0</span>
+                    <span class="stat__unit">/5</span>
+                    <span class="stat__label">User Rating</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Color Palette -->
+    <section class="section" id="colors">
+        <div class="section__container">
+            <span class="section__badge">01</span>
+            <h2 class="section__title">Color Palette</h2>
+            <p class="section__intro">A professional palette built on trust and clarity. Blue conveys reliability, while accent colors guide user actions.</p>
+
+            <div class="color-grid">
+                <div class="color-card" data-color="#ffffff">
+                    <div class="color-card__preview" style="background: #ffffff"></div>
+                    <div class="color-card__info">
+                        <span class="color-card__name">White</span>
+                        <span class="color-card__hex">#FFFFFF</span>
+                        <span class="color-card__use">Background</span>
+                    </div>
+                </div>
+                <div class="color-card" data-color="#f8fafc">
+                    <div class="color-card__preview" style="background: #f8fafc"></div>
+                    <div class="color-card__info">
+                        <span class="color-card__name">Slate 50</span>
+                        <span class="color-card__hex">#F8FAFC</span>
+                        <span class="color-card__use">Surface</span>
+                    </div>
+                </div>
+                <div class="color-card" data-color="#1e293b">
+                    <div class="color-card__preview" style="background: #1e293b"></div>
+                    <div class="color-card__info">
+                        <span class="color-card__name">Slate 800</span>
+                        <span class="color-card__hex">#1E293B</span>
+                        <span class="color-card__use">Primary Text</span>
+                    </div>
+                </div>
+                <div class="color-card" data-color="#64748b">
+                    <div class="color-card__preview" style="background: #64748b"></div>
+                    <div class="color-card__info">
+                        <span class="color-card__name">Slate 500</span>
+                        <span class="color-card__hex">#64748B</span>
+                        <span class="color-card__use">Secondary Text</span>
+                    </div>
+                </div>
+                <div class="color-card" data-color="#3b82f6">
+                    <div class="color-card__preview" style="background: #3b82f6"></div>
+                    <div class="color-card__info">
+                        <span class="color-card__name">Blue 500</span>
+                        <span class="color-card__hex">#3B82F6</span>
+                        <span class="color-card__use">Primary Action</span>
+                    </div>
+                </div>
+                <div class="color-card" data-color="#10b981">
+                    <div class="color-card__preview" style="background: #10b981"></div>
+                    <div class="color-card__info">
+                        <span class="color-card__name">Emerald 500</span>
+                        <span class="color-card__hex">#10B981</span>
+                        <span class="color-card__use">Success</span>
+                    </div>
+                </div>
+                <div class="color-card" data-color="#f59e0b">
+                    <div class="color-card__preview" style="background: #f59e0b"></div>
+                    <div class="color-card__info">
+                        <span class="color-card__name">Amber 500</span>
+                        <span class="color-card__hex">#F59E0B</span>
+                        <span class="color-card__use">Warning</span>
+                    </div>
+                </div>
+                <div class="color-card" data-color="#ef4444">
+                    <div class="color-card__preview" style="background: #ef4444"></div>
+                    <div class="color-card__info">
+                        <span class="color-card__name">Red 500</span>
+                        <span class="color-card__hex">#EF4444</span>
+                        <span class="color-card__use">Error</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copy-toast" id="copyToast">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Copied to clipboard</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Typography -->
+    <section class="section section--gray" id="typography">
+        <div class="section__container">
+            <span class="section__badge">02</span>
+            <h2 class="section__title">Typography</h2>
+            <p class="section__intro">Inter provides exceptional readability and a professional appearance that scales across all devices.</p>
+
+            <div class="type-showcase">
+                <div class="type-card">
+                    <div class="type-card__header">
+                        <span class="type-card__badge">Primary</span>
+                        <a href="https://fonts.google.com/specimen/Inter" class="type-card__link" target="_blank">Get Font</a>
+                    </div>
+                    <h3 class="type-card__name">Inter</h3>
+                    <p class="type-card__description">A variable font family carefully crafted for computer screens. Features a tall x-height for improved readability.</p>
+                    <div class="type-card__samples">
+                        <p class="type-card__sample weight-400">Regular 400 - The quick brown fox jumps over the lazy dog</p>
+                        <p class="type-card__sample weight-500">Medium 500 - The quick brown fox jumps over the lazy dog</p>
+                        <p class="type-card__sample weight-600">Semibold 600 - The quick brown fox jumps over the lazy dog</p>
+                        <p class="type-card__sample weight-700">Bold 700 - The quick brown fox jumps over the lazy dog</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="type-scale">
+                <h4 class="type-scale__title">Type Scale</h4>
+                <div class="type-scale__grid">
+                    <div class="type-scale__item">
+                        <div class="type-scale__preview display">Display</div>
+                        <div class="type-scale__meta">
+                            <span>56px / 64px</span>
+                            <span>Semibold</span>
+                        </div>
+                    </div>
+                    <div class="type-scale__item">
+                        <div class="type-scale__preview h1">Heading 1</div>
+                        <div class="type-scale__meta">
+                            <span>40px / 48px</span>
+                            <span>Semibold</span>
+                        </div>
+                    </div>
+                    <div class="type-scale__item">
+                        <div class="type-scale__preview h2">Heading 2</div>
+                        <div class="type-scale__meta">
+                            <span>32px / 40px</span>
+                            <span>Semibold</span>
+                        </div>
+                    </div>
+                    <div class="type-scale__item">
+                        <div class="type-scale__preview h3">Heading 3</div>
+                        <div class="type-scale__meta">
+                            <span>24px / 32px</span>
+                            <span>Medium</span>
+                        </div>
+                    </div>
+                    <div class="type-scale__item">
+                        <div class="type-scale__preview body">Body text for longer content and descriptions.</div>
+                        <div class="type-scale__meta">
+                            <span>16px / 24px</span>
+                            <span>Regular</span>
+                        </div>
+                    </div>
+                    <div class="type-scale__item">
+                        <div class="type-scale__preview small">Small supporting text</div>
+                        <div class="type-scale__meta">
+                            <span>14px / 20px</span>
+                            <span>Regular</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Components -->
+    <section class="section" id="components">
+        <div class="section__container">
+            <span class="section__badge">03</span>
+            <h2 class="section__title">Components</h2>
+            <p class="section__intro">Conversion-focused components designed for enterprise applications and marketing pages.</p>
+
+            <div class="component-group">
+                <h3 class="component-group__title">Buttons</h3>
+                <div class="component-row">
+                    <button class="btn btn--primary">Primary</button>
+                    <button class="btn btn--secondary">Secondary</button>
+                    <button class="btn btn--ghost">Ghost</button>
+                    <button class="btn btn--danger">Danger</button>
+                    <button class="btn btn--primary" disabled>Disabled</button>
+                </div>
+                <div class="component-row">
+                    <button class="btn btn--primary btn--small">Small</button>
+                    <button class="btn btn--primary">Default</button>
+                    <button class="btn btn--primary btn--large">Large</button>
+                </div>
+            </div>
+
+            <div class="component-group">
+                <h3 class="component-group__title">Form Inputs</h3>
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label class="input-label">Email Address</label>
+                        <input type="email" class="input" placeholder="you@company.com">
+                        <span class="input-hint">We'll never share your email.</span>
+                    </div>
+                    <div class="input-group">
+                        <label class="input-label">Company Size</label>
+                        <select class="select">
+                            <option>Select team size</option>
+                            <option>1-10 employees</option>
+                            <option>11-50 employees</option>
+                            <option>51-200 employees</option>
+                            <option>200+ employees</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="component-row">
+                    <label class="checkbox">
+                        <input type="checkbox" checked>
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__label">I agree to the Terms of Service</span>
+                    </label>
+                </div>
+                <div class="component-row">
+                    <label class="toggle">
+                        <input type="checkbox" checked>
+                        <span class="toggle__track"></span>
+                        <span class="toggle__label">Enable notifications</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="component-group">
+                <h3 class="component-group__title">Feature Cards</h3>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card__icon card__icon--blue">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h4 class="card__title">Scalable Infrastructure</h4>
+                        <p class="card__description">Built to grow with your business. Handle millions of requests without breaking a sweat.</p>
+                        <a href="#" class="card__link">Learn more</a>
+                    </div>
+                    <div class="card">
+                        <div class="card__icon card__icon--green">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <h4 class="card__title">Enterprise Security</h4>
+                        <p class="card__description">SOC 2 compliant with end-to-end encryption. Your data is always protected.</p>
+                        <a href="#" class="card__link">Learn more</a>
+                    </div>
+                    <div class="card">
+                        <div class="card__icon card__icon--purple">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M2 12h20"/>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            </svg>
+                        </div>
+                        <h4 class="card__title">Global Network</h4>
+                        <p class="card__description">Deployed across 50+ regions worldwide for lightning-fast performance everywhere.</p>
+                        <a href="#" class="card__link">Learn more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="component-group">
+                <h3 class="component-group__title">Status Badges</h3>
+                <div class="component-row">
+                    <span class="badge">Default</span>
+                    <span class="badge badge--primary">Primary</span>
+                    <span class="badge badge--success">Success</span>
+                    <span class="badge badge--warning">Warning</span>
+                    <span class="badge badge--danger">Error</span>
+                </div>
+            </div>
+
+            <div class="component-group">
+                <h3 class="component-group__title">Alert Messages</h3>
+                <div class="alert-stack">
+                    <div class="alert alert--info">
+                        <strong>Info:</strong> Your trial expires in 7 days. Upgrade now to keep your data.
+                    </div>
+                    <div class="alert alert--success">
+                        <strong>Success:</strong> Your changes have been saved successfully.
+                    </div>
+                    <div class="alert alert--warning">
+                        <strong>Warning:</strong> You're approaching your storage limit.
+                    </div>
+                    <div class="alert alert--danger">
+                        <strong>Error:</strong> Unable to process your request. Please try again.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usage Guidelines -->
+    <section class="section section--gray" id="usage">
+        <div class="section__container">
+            <span class="section__badge">04</span>
+            <h2 class="section__title">Usage Guidelines</h2>
+            <p class="section__intro">Best practices for building trustworthy, conversion-focused interfaces.</p>
+
+            <div class="guidelines-grid">
+                <div class="guideline guideline--do">
+                    <h4 class="guideline__title">Best Practices</h4>
+                    <ul class="guideline__list">
+                        <li>Use consistent spacing (4px grid system)</li>
+                        <li>Maintain clear visual hierarchy</li>
+                        <li>Provide immediate feedback on actions</li>
+                        <li>Use social proof (testimonials, stats)</li>
+                        <li>Make CTAs prominent and action-oriented</li>
+                        <li>Ensure accessibility (WCAG 2.1 AA)</li>
+                    </ul>
+                </div>
+                <div class="guideline guideline--dont">
+                    <h4 class="guideline__title">Avoid</h4>
+                    <ul class="guideline__list">
+                        <li>Overusing colors or competing CTAs</li>
+                        <li>Long forms without progress indicators</li>
+                        <li>Generic stock photography</li>
+                        <li>Animations that block user actions</li>
+                        <li>Jargon that confuses users</li>
+                        <li>Dark patterns or deceptive UI</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="use-cases">
+                <h4 class="use-cases__title">Ideal For</h4>
+                <div class="use-cases__grid">
+                    <div class="use-case">
+                        <span class="use-case__icon">B2B Software</span>
+                    </div>
+                    <div class="use-case">
+                        <span class="use-case__icon">Fintech</span>
+                    </div>
+                    <div class="use-case">
+                        <span class="use-case__icon">Enterprise Tools</span>
+                    </div>
+                    <div class="use-case">
+                        <span class="use-case__icon">Dashboards</span>
+                    </div>
+                    <div class="use-case">
+                        <span class="use-case__icon">Marketing Sites</span>
+                    </div>
+                    <div class="use-case">
+                        <span class="use-case__icon">Documentation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo -->
+    <section class="section" id="demo">
+        <div class="section__container">
+            <span class="section__badge">05</span>
+            <h2 class="section__title">Interactive Demo</h2>
+            <p class="section__intro">See professional micro-interactions in action.</p>
+
+            <div class="demo-pricing">
+                <div class="pricing-toggle">
+                    <span class="pricing-toggle__label">Monthly</span>
+                    <label class="toggle">
+                        <input type="checkbox" id="pricingToggle">
+                        <span class="toggle__track"></span>
+                    </label>
+                    <span class="pricing-toggle__label">Annually <span class="pricing-toggle__badge">Save 20%</span></span>
+                </div>
+
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h4 class="pricing-card__name">Starter</h4>
+                        <p class="pricing-card__description">For small teams getting started</p>
+                        <div class="pricing-card__price">
+                            <span class="pricing-card__currency">$</span>
+                            <span class="pricing-card__amount" data-monthly="29" data-annual="23">29</span>
+                            <span class="pricing-card__period">/month</span>
+                        </div>
+                        <ul class="pricing-card__features">
+                            <li>Up to 5 team members</li>
+                            <li>10GB storage</li>
+                            <li>Basic analytics</li>
+                            <li>Email support</li>
+                        </ul>
+                        <button class="btn btn--secondary btn--full">Start Free Trial</button>
+                    </div>
+                    <div class="pricing-card pricing-card--featured">
+                        <span class="pricing-card__badge">Most Popular</span>
+                        <h4 class="pricing-card__name">Professional</h4>
+                        <p class="pricing-card__description">For growing businesses</p>
+                        <div class="pricing-card__price">
+                            <span class="pricing-card__currency">$</span>
+                            <span class="pricing-card__amount" data-monthly="79" data-annual="63">79</span>
+                            <span class="pricing-card__period">/month</span>
+                        </div>
+                        <ul class="pricing-card__features">
+                            <li>Up to 20 team members</li>
+                            <li>100GB storage</li>
+                            <li>Advanced analytics</li>
+                            <li>Priority support</li>
+                            <li>API access</li>
+                        </ul>
+                        <button class="btn btn--primary btn--full">Start Free Trial</button>
+                    </div>
+                    <div class="pricing-card">
+                        <h4 class="pricing-card__name">Enterprise</h4>
+                        <p class="pricing-card__description">For large organizations</p>
+                        <div class="pricing-card__price">
+                            <span class="pricing-card__amount">Custom</span>
+                        </div>
+                        <ul class="pricing-card__features">
+                            <li>Unlimited team members</li>
+                            <li>Unlimited storage</li>
+                            <li>Custom analytics</li>
+                            <li>Dedicated support</li>
+                            <li>SLA guarantee</li>
+                        </ul>
+                        <button class="btn btn--secondary btn--full">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__brand">
+                <span class="footer__logo">StyleGuide</span>
+                <p class="footer__tagline">Corporate SaaS Design System</p>
+            </div>
+            <div class="footer__links">
+                <a href="../../index.html" class="footer__link">Back to Gallery</a>
+            </div>
+            <p class="footer__credits">Typography: Inter via Google Fonts</p>
+        </div>
+    </footer>
+
+    <script src="effects.js"></script>
+</body>
+</html>
