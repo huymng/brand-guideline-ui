@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk - Brand Style Guidelines</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Matrix Rain Background -->
+    <canvas id="matrixRain" class="matrix-rain"></canvas>
+
+    <!-- Glitch Overlay -->
+    <div class="glitch-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="../../index.html" class="nav__back">
+            <span class="nav__back-text">[EXIT]</span>
+        </a>
+        <div class="nav__center">
+            <span class="nav__status">SYSTEM://ONLINE</span>
+            <span class="nav__time" id="systemTime">00:00:00</span>
+        </div>
+        <span class="nav__title">CYBERPUNK</span>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__scanline"></div>
+        <div class="hero__content">
+            <div class="hero__glitch-container">
+                <h1 class="hero__title" data-text="CYBERPUNK">CYBERPUNK</h1>
+            </div>
+            <p class="hero__tagline">
+                <span class="typing-text" id="tagline"></span>
+                <span class="cursor">_</span>
+            </p>
+            <p class="hero__description">Welcome to the neon-soaked future. Where technology meets rebellion, and every interface tells a story of a world on the edge.</p>
+            <div class="hero__buttons">
+                <button class="btn btn--primary btn--glitch">
+                    <span>JACK IN</span>
+                </button>
+                <button class="btn btn--secondary">
+                    <span>DECRYPT</span>
+                </button>
+            </div>
+        </div>
+        <div class="hero__hud">
+            <div class="hud-element hud-element--top-left">
+                <span>LAT: 35.6762</span>
+                <span>LON: 139.6503</span>
+            </div>
+            <div class="hud-element hud-element--top-right">
+                <span>THREAT: LOW</span>
+                <span>NET: SECURE</span>
+            </div>
+            <div class="hud-element hud-element--bottom">
+                <div class="hud-bar">
+                    <span class="hud-bar__label">SYS</span>
+                    <div class="hud-bar__track"><div class="hud-bar__fill" style="width: 87%"></div></div>
+                    <span class="hud-bar__value">87%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Color Palette -->
+    <section class="section" id="colors">
+        <h2 class="section__title">
+            <span class="section__title-text">COLOR_PALETTE</span>
+            <span class="section__title-line"></span>
+        </h2>
+        <p class="section__intro">High-voltage colors that cut through the darkness. Electric cyans, warning pinks, and void blacks.</p>
+
+        <div class="color-grid">
+            <div class="color-card" data-color="#0d0d0d">
+                <div class="color-card__preview" style="background: #0d0d0d">
+                    <div class="color-card__glitch"></div>
+                </div>
+                <div class="color-card__info">
+                    <span class="color-card__name">VOID</span>
+                    <span class="color-card__hex">#0D0D0D</span>
+                    <span class="color-card__use">Primary Background</span>
+                </div>
+            </div>
+            <div class="color-card" data-color="#1a1a2e">
+                <div class="color-card__preview" style="background: #1a1a2e">
+                    <div class="color-card__glitch"></div>
+                </div>
+                <div class="color-card__info">
+                    <span class="color-card__name">DEEP_PURPLE</span>
+                    <span class="color-card__hex">#1A1A2E</span>
+                    <span class="color-card__use">Secondary Background</span>
+                </div>
+            </div>
+            <div class="color-card" data-color="#00f0ff">
+                <div class="color-card__preview" style="background: #00f0ff">
+                    <div class="color-card__glitch"></div>
+                </div>
+                <div class="color-card__info">
+                    <span class="color-card__name">ELECTRIC_CYAN</span>
+                    <span class="color-card__hex">#00F0FF</span>
+                    <span class="color-card__use">Primary Accent</span>
+                </div>
+            </div>
+            <div class="color-card" data-color="#ff2a6d">
+                <div class="color-card__preview" style="background: #ff2a6d">
+                    <div class="color-card__glitch"></div>
+                </div>
+                <div class="color-card__info">
+                    <span class="color-card__name">NEON_PINK</span>
+                    <span class="color-card__hex">#FF2A6D</span>
+                    <span class="color-card__use">Secondary Accent</span>
+                </div>
+            </div>
+            <div class="color-card" data-color="#05d9e8">
+                <div class="color-card__preview" style="background: #05d9e8">
+                    <div class="color-card__glitch"></div>
+                </div>
+                <div class="color-card__info">
+                    <span class="color-card__name">BRIGHT_CYAN</span>
+                    <span class="color-card__hex">#05D9E8</span>
+                    <span class="color-card__use">Links & Interactive</span>
+                </div>
+            </div>
+            <div class="color-card" data-color="#d300c5">
+                <div class="color-card__preview" style="background: #d300c5">
+                    <div class="color-card__glitch"></div>
+                </div>
+                <div class="color-card__info">
+                    <span class="color-card__name">MAGENTA</span>
+                    <span class="color-card__hex">#D300C5</span>
+                    <span class="color-card__use">Warnings & Highlights</span>
+                </div>
+            </div>
+            <div class="color-card" data-color="#ff6b6b">
+                <div class="color-card__preview" style="background: #ff6b6b">
+                    <div class="color-card__glitch"></div>
+                </div>
+                <div class="color-card__info">
+                    <span class="color-card__name">ALERT_RED</span>
+                    <span class="color-card__hex">#FF6B6B</span>
+                    <span class="color-card__use">Errors & Danger</span>
+                </div>
+            </div>
+            <div class="color-card" data-color="#f4f4f4">
+                <div class="color-card__preview" style="background: #f4f4f4">
+                    <div class="color-card__glitch"></div>
+                </div>
+                <div class="color-card__info">
+                    <span class="color-card__name">TERMINAL_WHITE</span>
+                    <span class="color-card__hex">#F4F4F4</span>
+                    <span class="color-card__use">Primary Text</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copy-toast" id="copyToast">
+            <span class="copy-toast__icon">&gt;</span>
+            <span class="copy-toast__text">COPIED TO CLIPBOARD</span>
+        </div>
+    </section>
+
+    <!-- Typography -->
+    <section class="section" id="typography">
+        <h2 class="section__title">
+            <span class="section__title-text">TYPOGRAPHY</span>
+            <span class="section__title-line"></span>
+        </h2>
+        <p class="section__intro">Futuristic fonts that feel like they belong in a neon-lit megacity. Sharp, technical, unapologetic.</p>
+
+        <div class="type-showcase">
+            <div class="type-card">
+                <div class="type-card__header">
+                    <span class="type-card__label">PRIMARY::DISPLAY</span>
+                    <span class="type-card__status">LOADED</span>
+                </div>
+                <h3 class="type-card__name font-primary">Orbitron</h3>
+                <p class="type-card__sample font-primary">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                <p class="type-card__sample font-primary">abcdefghijklmnopqrstuvwxyz</p>
+                <p class="type-card__sample font-primary">0123456789 !@#$%^&*()</p>
+                <a href="https://fonts.google.com/specimen/Orbitron" class="type-card__link" target="_blank">&gt; DOWNLOAD_FONT</a>
+            </div>
+            <div class="type-card">
+                <div class="type-card__header">
+                    <span class="type-card__label">SECONDARY::MONO</span>
+                    <span class="type-card__status">LOADED</span>
+                </div>
+                <h3 class="type-card__name font-secondary">Share Tech Mono</h3>
+                <p class="type-card__sample font-secondary">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                <p class="type-card__sample font-secondary">abcdefghijklmnopqrstuvwxyz</p>
+                <p class="type-card__sample font-secondary">0123456789 !@#$%^&*()</p>
+                <a href="https://fonts.google.com/specimen/Share+Tech+Mono" class="type-card__link" target="_blank">&gt; DOWNLOAD_FONT</a>
+            </div>
+        </div>
+
+        <div class="type-scale">
+            <div class="type-scale__header">
+                <h4 class="type-scale__title">&gt; TYPE_HIERARCHY</h4>
+            </div>
+            <div class="type-scale__item">
+                <span class="type-scale__label">H1 // 3rem</span>
+                <span class="type-scale__preview h1">SYSTEM BREACH</span>
+            </div>
+            <div class="type-scale__item">
+                <span class="type-scale__label">H2 // 2rem</span>
+                <span class="type-scale__preview h2">ACCESS GRANTED</span>
+            </div>
+            <div class="type-scale__item">
+                <span class="type-scale__label">H3 // 1.5rem</span>
+                <span class="type-scale__preview h3">DECRYPTING...</span>
+            </div>
+            <div class="type-scale__item">
+                <span class="type-scale__label">BODY // 1rem</span>
+                <span class="type-scale__preview body">The network never sleeps. Neither do we.</span>
+            </div>
+            <div class="type-scale__item">
+                <span class="type-scale__label">MONO // 0.875rem</span>
+                <span class="type-scale__preview mono">console.log("Welcome to the future");</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Components -->
+    <section class="section" id="components">
+        <h2 class="section__title">
+            <span class="section__title-text">COMPONENTS</span>
+            <span class="section__title-line"></span>
+        </h2>
+        <p class="section__intro">Interface elements forged for the digital underground. Every interaction should feel electric.</p>
+
+        <div class="component-group">
+            <h3 class="component-group__title">&gt; BUTTONS</h3>
+            <div class="component-row">
+                <button class="btn btn--primary btn--glitch">PRIMARY</button>
+                <button class="btn btn--secondary">SECONDARY</button>
+                <button class="btn btn--ghost">GHOST</button>
+                <button class="btn btn--danger">DANGER</button>
+                <button class="btn btn--primary" disabled>DISABLED</button>
+            </div>
+        </div>
+
+        <div class="component-group">
+            <h3 class="component-group__title">&gt; FORM_INPUTS</h3>
+            <div class="component-row">
+                <div class="input-group">
+                    <label class="input-label">USERNAME</label>
+                    <input type="text" class="input" placeholder="Enter handle...">
+                </div>
+                <div class="input-group">
+                    <label class="input-label">SECTOR</label>
+                    <select class="select">
+                        <option>Select sector</option>
+                        <option>SECTOR-7G</option>
+                        <option>DOWNTOWN</option>
+                        <option>INDUSTRIAL</option>
+                        <option>NEON_DISTRICT</option>
+                    </select>
+                </div>
+            </div>
+            <div class="component-row">
+                <label class="checkbox">
+                    <input type="checkbox" checked>
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__label">ENCRYPT_CONNECTION</span>
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox">
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__label">STEALTH_MODE</span>
+                </label>
+                <label class="toggle">
+                    <input type="checkbox" checked>
+                    <span class="toggle__track"></span>
+                    <span class="toggle__label">NEURAL_LINK</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="component-group">
+            <h3 class="component-group__title">&gt; DATA_CARDS</h3>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card__header">
+                        <span class="card__icon">&#9632;</span>
+                        <span class="card__status card__status--online">ONLINE</span>
+                    </div>
+                    <h4 class="card__title">NETRUNNER_01</h4>
+                    <p class="card__text">Elite hacker specializing in corporate data extraction and firewall penetration.</p>
+                    <div class="card__stats">
+                        <div class="card__stat">
+                            <span class="card__stat-label">SKILL</span>
+                            <span class="card__stat-value">98%</span>
+                        </div>
+                        <div class="card__stat">
+                            <span class="card__stat-label">TRUST</span>
+                            <span class="card__stat-value">HIGH</span>
+                        </div>
+                    </div>
+                    <button class="btn btn--small btn--primary">CONNECT</button>
+                </div>
+                <div class="card card--highlight">
+                    <div class="card__header">
+                        <span class="card__icon">&#9670;</span>
+                        <span class="card__status card__status--warning">ENCRYPTED</span>
+                    </div>
+                    <h4 class="card__title">CLASSIFIED_DATA</h4>
+                    <p class="card__text">Corporate secrets. Handle with extreme caution. Auto-destruct enabled.</p>
+                    <div class="card__stats">
+                        <div class="card__stat">
+                            <span class="card__stat-label">RISK</span>
+                            <span class="card__stat-value">CRITICAL</span>
+                        </div>
+                        <div class="card__stat">
+                            <span class="card__stat-label">VALUE</span>
+                            <span class="card__stat-value">$$$</span>
+                        </div>
+                    </div>
+                    <button class="btn btn--small btn--danger">DECRYPT</button>
+                </div>
+                <div class="card">
+                    <div class="card__header">
+                        <span class="card__icon">&#9651;</span>
+                        <span class="card__status card__status--offline">OFFLINE</span>
+                    </div>
+                    <h4 class="card__title">SAFE_HOUSE</h4>
+                    <p class="card__text">Secure location in the industrial district. Off-grid power and comms.</p>
+                    <div class="card__stats">
+                        <div class="card__stat">
+                            <span class="card__stat-label">SECURITY</span>
+                            <span class="card__stat-value">MAX</span>
+                        </div>
+                        <div class="card__stat">
+                            <span class="card__stat-label">CAPACITY</span>
+                            <span class="card__stat-value">6</span>
+                        </div>
+                    </div>
+                    <button class="btn btn--small btn--secondary">LOCATE</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="component-group">
+            <h3 class="component-group__title">&gt; STATUS_INDICATORS</h3>
+            <div class="component-row">
+                <span class="badge">DEFAULT</span>
+                <span class="badge badge--success">CONNECTED</span>
+                <span class="badge badge--warning">SCANNING</span>
+                <span class="badge badge--danger">BREACH</span>
+                <span class="badge badge--info">ENCRYPTED</span>
+            </div>
+        </div>
+
+        <div class="component-group">
+            <h3 class="component-group__title">&gt; LOADING_STATES</h3>
+            <div class="loading-demo">
+                <div class="loader loader--bar">
+                    <div class="loader__fill"></div>
+                </div>
+                <div class="loader loader--pulse">
+                    <span></span><span></span><span></span>
+                </div>
+                <div class="loader loader--glitch">LOADING...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usage Guidelines -->
+    <section class="section" id="usage">
+        <h2 class="section__title">
+            <span class="section__title-text">USAGE_GUIDELINES</span>
+            <span class="section__title-line"></span>
+        </h2>
+        <p class="section__intro">Rules for navigating the neon jungle. Follow these protocols for maximum impact.</p>
+
+        <div class="guidelines-grid">
+            <div class="guideline guideline--do">
+                <h4 class="guideline__title">[+] EXECUTE</h4>
+                <ul class="guideline__list">
+                    <li>Embrace the darkness - let neons pop against deep blacks</li>
+                    <li>Use glitch effects sparingly for emphasis</li>
+                    <li>Layer UI elements with depth and transparency</li>
+                    <li>Include HUD-style information displays</li>
+                    <li>Add subtle scanning/loading animations</li>
+                    <li>Use technical, abbreviated language in UI</li>
+                </ul>
+            </div>
+            <div class="guideline guideline--dont">
+                <h4 class="guideline__title">[-] ABORT</h4>
+                <ul class="guideline__list">
+                    <li>Overdo glitch effects - they become noise</li>
+                    <li>Use warm, organic colors - stay electric</li>
+                    <li>Forget readability in pursuit of aesthetics</li>
+                    <li>Make everything flash and animate at once</li>
+                    <li>Ignore accessibility - contrast matters</li>
+                    <li>Use friendly, casual language - stay sharp</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="use-cases">
+            <h4 class="use-cases__title">&gt; OPTIMAL_DEPLOYMENT</h4>
+            <div class="use-cases__grid">
+                <div class="use-case">
+                    <span class="use-case__icon">&#9635;</span>
+                    <span class="use-case__text">Tech startups</span>
+                </div>
+                <div class="use-case">
+                    <span class="use-case__icon">&#9733;</span>
+                    <span class="use-case__text">Gaming platforms</span>
+                </div>
+                <div class="use-case">
+                    <span class="use-case__icon">&#9830;</span>
+                    <span class="use-case__text">Crypto/Web3</span>
+                </div>
+                <div class="use-case">
+                    <span class="use-case__icon">&#9679;</span>
+                    <span class="use-case__text">Music/events</span>
+                </div>
+                <div class="use-case">
+                    <span class="use-case__icon">&#9650;</span>
+                    <span class="use-case__text">Sci-fi projects</span>
+                </div>
+                <div class="use-case">
+                    <span class="use-case__icon">&#9632;</span>
+                    <span class="use-case__text">Developer tools</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo -->
+    <section class="section" id="demo">
+        <h2 class="section__title">
+            <span class="section__title-text">INTERACTIVE_DEMO</span>
+            <span class="section__title-line"></span>
+        </h2>
+        <p class="section__intro">Experience the full cyberpunk interface. Toggle effects and watch the system respond.</p>
+
+        <div class="demo-controls">
+            <label class="toggle">
+                <input type="checkbox" id="toggleMatrix" checked>
+                <span class="toggle__track"></span>
+                <span class="toggle__label">MATRIX_RAIN</span>
+            </label>
+            <label class="toggle">
+                <input type="checkbox" id="toggleGlitch">
+                <span class="toggle__track"></span>
+                <span class="toggle__label">GLITCH_FX</span>
+            </label>
+            <label class="toggle">
+                <input type="checkbox" id="toggleScanlines" checked>
+                <span class="toggle__track"></span>
+                <span class="toggle__label">SCANLINES</span>
+            </label>
+            <label class="toggle">
+                <input type="checkbox" id="toggleNeonPulse" checked>
+                <span class="toggle__track"></span>
+                <span class="toggle__label">NEON_PULSE</span>
+            </label>
+        </div>
+
+        <div class="terminal">
+            <div class="terminal__header">
+                <span class="terminal__dot"></span>
+                <span class="terminal__dot"></span>
+                <span class="terminal__dot"></span>
+                <span class="terminal__title">SYSTEM_TERMINAL</span>
+            </div>
+            <div class="terminal__body" id="terminalOutput">
+                <p>&gt; Initializing cyberpunk style system...</p>
+                <p>&gt; Loading color palette... <span class="text-success">DONE</span></p>
+                <p>&gt; Compiling typography assets... <span class="text-success">DONE</span></p>
+                <p>&gt; Activating neural interface... <span class="text-success">DONE</span></p>
+                <p>&gt; System ready. Welcome, user.</p>
+                <p class="terminal__prompt">&gt; <span id="terminalInput" class="terminal__cursor">_</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__grid">
+            <div class="footer__section">
+                <span class="footer__label">STYLE</span>
+                <span class="footer__value">CYBERPUNK</span>
+            </div>
+            <div class="footer__section">
+                <span class="footer__label">VERSION</span>
+                <span class="footer__value">2.0.77</span>
+            </div>
+            <div class="footer__section">
+                <span class="footer__label">STATUS</span>
+                <span class="footer__value footer__value--online">ACTIVE</span>
+            </div>
+        </div>
+        <div class="footer__credits">
+            <p>Fonts: Orbitron, Share Tech Mono via Google Fonts</p>
+        </div>
+        <a href="../../index.html" class="footer__link">&gt; EXIT_TO_GALLERY</a>
+        <div class="footer__decoration">
+            <span class="footer__line"></span>
+        </div>
+    </footer>
+
+    <script src="effects.js"></script>
+</body>
+</html>

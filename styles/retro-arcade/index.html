@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Arcade - Brand Style Guidelines</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- CRT Overlay -->
+    <div class="crt-overlay"></div>
+    <div class="scanlines"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="../../index.html" class="nav__back">← Back to Gallery</a>
+        <span class="nav__title">RETRO ARCADE</span>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__content">
+            <h1 class="hero__title glitch" data-text="RETRO ARCADE">RETRO ARCADE</h1>
+            <p class="hero__tagline">Neon lights. Pixel dreams. 8-bit glory.</p>
+            <p class="hero__description">A nostalgic journey back to the golden age of arcade gaming. Bold neon colors, CRT aesthetics, and that unmistakable electronic hum.</p>
+            <button class="btn btn--primary" data-sound="select">
+                <span>INSERT COIN TO START</span>
+            </button>
+        </div>
+        <div class="hero__decoration">
+            <div class="coin coin--1"></div>
+            <div class="coin coin--2"></div>
+            <div class="coin coin--3"></div>
+        </div>
+    </section>
+
+    <!-- Color Palette -->
+    <section class="section" id="colors">
+        <h2 class="section__title">COLOR PALETTE</h2>
+        <p class="section__intro">High-contrast neons against deep darkness. These colors pop off the screen like they're about to challenge you to a boss fight.</p>
+
+        <div class="color-grid">
+            <div class="color-card" data-color="#0f0f23">
+                <div class="color-card__preview" style="background: #0f0f23"></div>
+                <div class="color-card__info">
+                    <span class="color-card__name">Void Black</span>
+                    <span class="color-card__hex">#0F0F23</span>
+                    <span class="color-card__use">Primary Background</span>
+                </div>
+            </div>
+            <div class="color-card" data-color="#00ff41">
+                <div class="color-card__preview" style="background: #00ff41"></div>
+                <div class="color-card__info">
+                    <span class="color-card__name">Matrix Green</span>
+                    <span class="color-card__hex">#00FF41</span>
+                    <span class="color-card__use">Primary Accent</span>
+                </div>
+            </div>
+            <div class="color-card" data-color="#ff00ff">
+                <div class="color-card__preview" style="background: #ff00ff"></div>
+                <div class="color-card__info">
+                    <span class="color-card__name">Arcade Magenta</span>
+                    <span class="color-card__hex">#FF00FF</span>
+                    <span class="color-card__use">Secondary Accent</span>
+                </div>
+            </div>
+            <div class="color-card" data-color="#ffff00">
+                <div class="color-card__preview" style="background: #ffff00"></div>
+                <div class="color-card__info">
+                    <span class="color-card__name">High Score Yellow</span>
+                    <span class="color-card__hex">#FFFF00</span>
+                    <span class="color-card__use">Highlights & Scores</span>
+                </div>
+            </div>
+            <div class="color-card" data-color="#00ffff">
+                <div class="color-card__preview" style="background: #00ffff"></div>
+                <div class="color-card__info">
+                    <span class="color-card__name">Electric Cyan</span>
+                    <span class="color-card__hex">#00FFFF</span>
+                    <span class="color-card__use">Links & Interactives</span>
+                </div>
+            </div>
+            <div class="color-card" data-color="#ff6b6b">
+                <div class="color-card__preview" style="background: #ff6b6b"></div>
+                <div class="color-card__info">
+                    <span class="color-card__name">Game Over Red</span>
+                    <span class="color-card__hex">#FF6B6B</span>
+                    <span class="color-card__use">Errors & Warnings</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copy-toast" id="copyToast">COPIED!</div>
+    </section>
+
+    <!-- Typography -->
+    <section class="section" id="typography">
+        <h2 class="section__title">TYPOGRAPHY</h2>
+        <p class="section__intro">Pixel-perfect fonts that scream "quarter-muncher". Every letter looks like it belongs on a CRT monitor.</p>
+
+        <div class="type-showcase">
+            <div class="type-card">
+                <span class="type-card__label">PRIMARY FONT</span>
+                <h3 class="type-card__name font-primary">Press Start 2P</h3>
+                <p class="type-card__sample font-primary">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                <p class="type-card__sample font-primary">abcdefghijklmnopqrstuvwxyz</p>
+                <p class="type-card__sample font-primary">0123456789 !@#$%</p>
+                <a href="https://fonts.google.com/specimen/Press+Start+2P" class="type-card__link" target="_blank">Get Font →</a>
+            </div>
+            <div class="type-card">
+                <span class="type-card__label">SECONDARY FONT</span>
+                <h3 class="type-card__name font-secondary">VT323</h3>
+                <p class="type-card__sample font-secondary large">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                <p class="type-card__sample font-secondary large">abcdefghijklmnopqrstuvwxyz</p>
+                <p class="type-card__sample font-secondary large">0123456789 !@#$%</p>
+                <a href="https://fonts.google.com/specimen/VT323" class="type-card__link" target="_blank">Get Font →</a>
+            </div>
+        </div>
+
+        <div class="type-scale">
+            <h4 class="type-scale__title">TYPE SCALE</h4>
+            <div class="type-scale__item">
+                <span class="type-scale__label">H1 / 2.5rem</span>
+                <span class="type-scale__preview h1">GAME OVER</span>
+            </div>
+            <div class="type-scale__item">
+                <span class="type-scale__label">H2 / 1.5rem</span>
+                <span class="type-scale__preview h2">HIGH SCORES</span>
+            </div>
+            <div class="type-scale__item">
+                <span class="type-scale__label">H3 / 1rem</span>
+                <span class="type-scale__preview h3">LEVEL COMPLETE</span>
+            </div>
+            <div class="type-scale__item">
+                <span class="type-scale__label">Body / 0.875rem</span>
+                <span class="type-scale__preview body">Insert coin to continue...</span>
+            </div>
+            <div class="type-scale__item">
+                <span class="type-scale__label">Caption / 0.75rem</span>
+                <span class="type-scale__preview caption">CREDITS: 03</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Components -->
+    <section class="section" id="components">
+        <h2 class="section__title">COMPONENTS</h2>
+        <p class="section__intro">Interactive elements that feel like pressing arcade buttons. Satisfying, responsive, and unmistakably retro.</p>
+
+        <div class="component-group">
+            <h3 class="component-group__title">BUTTONS</h3>
+            <div class="component-row">
+                <button class="btn btn--primary" data-sound="select">PRIMARY</button>
+                <button class="btn btn--secondary" data-sound="select">SECONDARY</button>
+                <button class="btn btn--ghost" data-sound="select">GHOST</button>
+                <button class="btn btn--primary" disabled>DISABLED</button>
+            </div>
+        </div>
+
+        <div class="component-group">
+            <h3 class="component-group__title">FORM INPUTS</h3>
+            <div class="component-row">
+                <input type="text" class="input" placeholder="ENTER NAME...">
+                <select class="select">
+                    <option>SELECT DIFFICULTY</option>
+                    <option>EASY</option>
+                    <option>NORMAL</option>
+                    <option>HARD</option>
+                    <option>NIGHTMARE</option>
+                </select>
+            </div>
+            <div class="component-row">
+                <label class="checkbox">
+                    <input type="checkbox" checked>
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__label">SOUND EFFECTS</span>
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox">
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__label">SCANLINES</span>
+                </label>
+                <label class="toggle">
+                    <input type="checkbox" checked>
+                    <span class="toggle__track"></span>
+                    <span class="toggle__label">CRT MODE</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="component-group">
+            <h3 class="component-group__title">CARDS</h3>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card__header">
+                        <span class="card__icon">👾</span>
+                        <span class="card__badge">NEW</span>
+                    </div>
+                    <h4 class="card__title">SPACE INVADERS</h4>
+                    <p class="card__text">Classic alien shooter. Defend Earth from waves of pixelated invaders.</p>
+                    <div class="card__footer">
+                        <span class="card__score">HIGH: 99,999</span>
+                        <button class="btn btn--small" data-sound="coin">PLAY</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__header">
+                        <span class="card__icon">🐍</span>
+                        <span class="card__badge badge--hot">HOT</span>
+                    </div>
+                    <h4 class="card__title">SNAKE QUEST</h4>
+                    <p class="card__text">Grow your snake, avoid the walls. How long can you survive?</p>
+                    <div class="card__footer">
+                        <span class="card__score">HIGH: 45,230</span>
+                        <button class="btn btn--small" data-sound="coin">PLAY</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__header">
+                        <span class="card__icon">🏎️</span>
+                    </div>
+                    <h4 class="card__title">TURBO RACER</h4>
+                    <p class="card__text">High-speed racing action. Drift through neon-lit streets.</p>
+                    <div class="card__footer">
+                        <span class="card__score">HIGH: 78,100</span>
+                        <button class="btn btn--small" data-sound="coin">PLAY</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="component-group">
+            <h3 class="component-group__title">BADGES & TAGS</h3>
+            <div class="component-row">
+                <span class="badge">DEFAULT</span>
+                <span class="badge badge--success">1UP</span>
+                <span class="badge badge--warning">BONUS</span>
+                <span class="badge badge--danger">GAME OVER</span>
+                <span class="tag">MULTIPLAYER</span>
+                <span class="tag">CO-OP</span>
+                <span class="tag">CLASSIC</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usage Guidelines -->
+    <section class="section" id="usage">
+        <h2 class="section__title">USAGE GUIDELINES</h2>
+        <p class="section__intro">Master the art of retro design. Here's how to wield this aesthetic effectively.</p>
+
+        <div class="guidelines-grid">
+            <div class="guideline guideline--do">
+                <h4 class="guideline__title">✓ DO</h4>
+                <ul class="guideline__list">
+                    <li>Use high contrast between neons and dark backgrounds</li>
+                    <li>Add subtle CRT/scanline effects for authenticity</li>
+                    <li>Keep text blocky and pixel-aligned</li>
+                    <li>Use sound effects sparingly but memorably</li>
+                    <li>Embrace the glow - neon shadows make elements pop</li>
+                    <li>Reference classic arcade UI patterns (scores, lives, levels)</li>
+                </ul>
+            </div>
+            <div class="guideline guideline--dont">
+                <h4 class="guideline__title">✗ DON'T</h4>
+                <ul class="guideline__list">
+                    <li>Mix too many neon colors at once (pick 2-3 max)</li>
+                    <li>Use rounded, modern fonts - stay blocky</li>
+                    <li>Overdo animations - retro was limited by hardware</li>
+                    <li>Forget readability - neons need dark backgrounds</li>
+                    <li>Use gradients everywhere - keep it flat with glows</li>
+                    <li>Ignore accessibility - ensure sufficient contrast</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="use-cases">
+            <h4 class="use-cases__title">PERFECT FOR</h4>
+            <div class="use-cases__grid">
+                <div class="use-case">
+                    <span class="use-case__icon">🎮</span>
+                    <span class="use-case__text">Gaming websites</span>
+                </div>
+                <div class="use-case">
+                    <span class="use-case__icon">🎵</span>
+                    <span class="use-case__text">Synthwave/chiptune music</span>
+                </div>
+                <div class="use-case">
+                    <span class="use-case__icon">🍕</span>
+                    <span class="use-case__text">Retro-themed restaurants</span>
+                </div>
+                <div class="use-case">
+                    <span class="use-case__icon">📱</span>
+                    <span class="use-case__text">Nostalgic app interfaces</span>
+                </div>
+                <div class="use-case">
+                    <span class="use-case__icon">🎪</span>
+                    <span class="use-case__text">Event landing pages</span>
+                </div>
+                <div class="use-case">
+                    <span class="use-case__icon">👕</span>
+                    <span class="use-case__text">Merch & apparel stores</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo -->
+    <section class="section" id="demo">
+        <h2 class="section__title">INTERACTIVE DEMO</h2>
+        <p class="section__intro">Experience the full retro arcade effect. Toggle features to see the style in action.</p>
+
+        <div class="demo-controls">
+            <label class="toggle">
+                <input type="checkbox" id="toggleScanlines" checked>
+                <span class="toggle__track"></span>
+                <span class="toggle__label">SCANLINES</span>
+            </label>
+            <label class="toggle">
+                <input type="checkbox" id="toggleFlicker">
+                <span class="toggle__track"></span>
+                <span class="toggle__label">SCREEN FLICKER</span>
+            </label>
+            <label class="toggle">
+                <input type="checkbox" id="toggleSound" checked>
+                <span class="toggle__track"></span>
+                <span class="toggle__label">8-BIT SOUNDS</span>
+            </label>
+            <label class="toggle">
+                <input type="checkbox" id="toggleGlow" checked>
+                <span class="toggle__track"></span>
+                <span class="toggle__label">NEON GLOW</span>
+            </label>
+        </div>
+
+        <div class="score-display">
+            <div class="score-display__item">
+                <span class="score-display__label">SCORE</span>
+                <span class="score-display__value" id="scoreValue">0000000</span>
+            </div>
+            <div class="score-display__item">
+                <span class="score-display__label">HIGH</span>
+                <span class="score-display__value">9999999</span>
+            </div>
+            <div class="score-display__item">
+                <span class="score-display__label">LIVES</span>
+                <span class="score-display__value">♥♥♥</span>
+            </div>
+        </div>
+
+        <button class="btn btn--primary btn--large" id="addScore" data-sound="coin">
+            ADD POINTS (+1000)
+        </button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <p class="footer__text">RETRO ARCADE STYLE GUIDELINES</p>
+            <p class="footer__credits">Fonts: Press Start 2P, VT323 via Google Fonts</p>
+            <a href="../../index.html" class="footer__link">← RETURN TO GALLERY</a>
+        </div>
+        <div class="footer__decoration">
+            <span>●●● GAME OVER ●●●</span>
+        </div>
+    </footer>
+
+    <script src="effects.js"></script>
+</body>
+</html>
