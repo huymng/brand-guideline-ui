@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neomorphism Style Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Light Source Indicator -->
+    <div class="light-source" id="lightSource">
+        <div class="light-icon"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <nav class="nav">
+            <a href="../../index.html" class="nav-back neu-button">
+                <span class="arrow">←</span> Gallery
+            </a>
+            <div class="nav-title">Neomorphism</div>
+            <div class="light-toggle neu-button" id="lightToggle">
+                <span class="toggle-icon">☀️</span>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+            <h1 class="hero-title neu-text">Soft UI</h1>
+            <p class="hero-subtitle">Where light meets shadow to create depth</p>
+            <div class="hero-cta">
+                <button class="neu-button primary">Explore Style</button>
+                <button class="neu-button">Learn More</button>
+            </div>
+        </div>
+
+        <!-- Floating Shapes -->
+        <div class="hero-shapes">
+            <div class="neu-shape circle" id="shape1"></div>
+            <div class="neu-shape square" id="shape2"></div>
+            <div class="neu-shape pill" id="shape3"></div>
+        </div>
+    </header>
+
+    <!-- Color Palette Section -->
+    <section class="section palette-section">
+        <h2 class="section-title neu-text">Color Palette</h2>
+        <p class="section-desc">Monochromatic harmony with subtle depth variations</p>
+
+        <div class="palette-grid">
+            <div class="palette-card neu-raised" data-color="#E0E5EC">
+                <div class="color-preview" style="background: #E0E5EC;"></div>
+                <div class="color-info">
+                    <span class="color-name">Base Surface</span>
+                    <span class="color-hex">#E0E5EC</span>
+                </div>
+            </div>
+            <div class="palette-card neu-raised" data-color="#A3B1C6">
+                <div class="color-preview" style="background: #A3B1C6;"></div>
+                <div class="color-info">
+                    <span class="color-name">Dark Shadow</span>
+                    <span class="color-hex">#A3B1C6</span>
+                </div>
+            </div>
+            <div class="palette-card neu-raised" data-color="#FFFFFF">
+                <div class="color-preview" style="background: #FFFFFF;"></div>
+                <div class="color-info">
+                    <span class="color-name">Light Shadow</span>
+                    <span class="color-hex">#FFFFFF</span>
+                </div>
+            </div>
+            <div class="palette-card neu-raised" data-color="#6B7AA1">
+                <div class="color-preview" style="background: #6B7AA1;"></div>
+                <div class="color-info">
+                    <span class="color-name">Primary Accent</span>
+                    <span class="color-hex">#6B7AA1</span>
+                </div>
+            </div>
+            <div class="palette-card neu-raised" data-color="#9BA4B5">
+                <div class="color-preview" style="background: #9BA4B5;"></div>
+                <div class="color-info">
+                    <span class="color-name">Muted Text</span>
+                    <span class="color-hex">#9BA4B5</span>
+                </div>
+            </div>
+            <div class="palette-card neu-raised" data-color="#4A5568">
+                <div class="color-preview" style="background: #4A5568;"></div>
+                <div class="color-info">
+                    <span class="color-name">Primary Text</span>
+                    <span class="color-hex">#4A5568</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Typography Section -->
+    <section class="section typography-section">
+        <h2 class="section-title neu-text">Typography</h2>
+        <p class="section-desc">Rounded, friendly typefaces that complement soft edges</p>
+
+        <div class="typography-showcase">
+            <div class="type-card neu-raised">
+                <div class="type-preview">
+                    <span class="type-sample display">Nunito</span>
+                    <span class="type-weight">Light 300</span>
+                </div>
+                <p class="type-usage">Headlines and decorative text with airy presence</p>
+            </div>
+
+            <div class="type-card neu-raised">
+                <div class="type-preview">
+                    <span class="type-sample regular">Nunito</span>
+                    <span class="type-weight">Regular 400</span>
+                </div>
+                <p class="type-usage">Body copy with excellent readability</p>
+            </div>
+
+            <div class="type-card neu-raised">
+                <div class="type-preview">
+                    <span class="type-sample semibold">Nunito</span>
+                    <span class="type-weight">SemiBold 600</span>
+                </div>
+                <p class="type-usage">UI labels, buttons, and emphasis</p>
+            </div>
+
+            <div class="type-card neu-raised">
+                <div class="type-preview">
+                    <span class="type-sample bold">Nunito</span>
+                    <span class="type-weight">Bold 700</span>
+                </div>
+                <p class="type-usage">Strong headings and call-to-actions</p>
+            </div>
+        </div>
+
+        <div class="type-scale neu-inset">
+            <div class="scale-item">
+                <span class="scale-label">H1</span>
+                <span class="scale-preview h1">48px / 3rem</span>
+            </div>
+            <div class="scale-item">
+                <span class="scale-label">H2</span>
+                <span class="scale-preview h2">36px / 2.25rem</span>
+            </div>
+            <div class="scale-item">
+                <span class="scale-label">H3</span>
+                <span class="scale-preview h3">24px / 1.5rem</span>
+            </div>
+            <div class="scale-item">
+                <span class="scale-label">Body</span>
+                <span class="scale-preview body">16px / 1rem</span>
+            </div>
+            <div class="scale-item">
+                <span class="scale-label">Small</span>
+                <span class="scale-preview small">14px / 0.875rem</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Components Section -->
+    <section class="section components-section">
+        <h2 class="section-title neu-text">Components</h2>
+        <p class="section-desc">Interactive elements with tactile feedback</p>
+
+        <div class="components-grid">
+            <!-- Buttons -->
+            <div class="component-group">
+                <h3 class="component-title">Buttons</h3>
+                <div class="component-demo neu-inset">
+                    <button class="neu-button">Default</button>
+                    <button class="neu-button primary">Primary</button>
+                    <button class="neu-button icon-btn">
+                        <span class="btn-icon">+</span>
+                    </button>
+                    <button class="neu-button pressed">Pressed</button>
+                </div>
+            </div>
+
+            <!-- Toggle Switches -->
+            <div class="component-group">
+                <h3 class="component-title">Toggles</h3>
+                <div class="component-demo neu-inset">
+                    <label class="neu-toggle">
+                        <input type="checkbox" checked>
+                        <span class="toggle-track">
+                            <span class="toggle-thumb"></span>
+                        </span>
+                    </label>
+                    <label class="neu-toggle">
+                        <input type="checkbox">
+                        <span class="toggle-track">
+                            <span class="toggle-thumb"></span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Sliders -->
+            <div class="component-group">
+                <h3 class="component-title">Sliders</h3>
+                <div class="component-demo neu-inset">
+                    <div class="neu-slider-container">
+                        <input type="range" class="neu-slider" id="demoSlider" min="0" max="100" value="60">
+                        <span class="slider-value" id="sliderValue">60</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Fields -->
+            <div class="component-group">
+                <h3 class="component-title">Inputs</h3>
+                <div class="component-demo neu-inset">
+                    <input type="text" class="neu-input" placeholder="Text input...">
+                    <div class="neu-search">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cards -->
+            <div class="component-group wide">
+                <h3 class="component-title">Cards</h3>
+                <div class="component-demo cards-demo">
+                    <div class="neu-card raised">
+                        <div class="card-icon neu-circle">📊</div>
+                        <h4>Raised Card</h4>
+                        <p>Extruded from the surface with outward shadows</p>
+                    </div>
+                    <div class="neu-card flat">
+                        <div class="card-icon neu-circle">🎯</div>
+                        <h4>Flat Card</h4>
+                        <p>Minimal elevation with subtle definition</p>
+                    </div>
+                    <div class="neu-card inset">
+                        <div class="card-icon neu-circle pressed">💡</div>
+                        <h4>Inset Card</h4>
+                        <p>Pressed into the surface creating depth</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress Indicators -->
+            <div class="component-group">
+                <h3 class="component-title">Progress</h3>
+                <div class="component-demo neu-inset">
+                    <div class="neu-progress">
+                        <div class="progress-fill" style="width: 75%;"></div>
+                    </div>
+                    <div class="neu-progress-circle" data-progress="68">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="track" cx="50" cy="50" r="45"/>
+                            <circle class="fill" cx="50" cy="50" r="45"/>
+                        </svg>
+                        <span class="progress-text">68%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo Section -->
+    <section class="section demo-section">
+        <h2 class="section-title neu-text">Interactive Demo</h2>
+        <p class="section-desc">Experience the depth - move your cursor to shift the light source</p>
+
+        <div class="demo-container">
+            <div class="demo-panel neu-raised" id="demoPanel">
+                <div class="demo-header">
+                    <h3>Shadow Direction</h3>
+                    <p>Light follows your cursor position</p>
+                </div>
+
+                <div class="demo-elements">
+                    <div class="demo-element neu-dynamic" id="elem1">
+                        <span>1</span>
+                    </div>
+                    <div class="demo-element neu-dynamic" id="elem2">
+                        <span>2</span>
+                    </div>
+                    <div class="demo-element neu-dynamic" id="elem3">
+                        <span>3</span>
+                    </div>
+                    <div class="demo-element neu-dynamic" id="elem4">
+                        <span>4</span>
+                    </div>
+                </div>
+
+                <div class="demo-controls">
+                    <div class="control-group">
+                        <label>Shadow Distance</label>
+                        <input type="range" class="neu-slider" id="shadowDistance" min="5" max="30" value="15">
+                    </div>
+                    <div class="control-group">
+                        <label>Shadow Blur</label>
+                        <input type="range" class="neu-slider" id="shadowBlur" min="10" max="60" value="30">
+                    </div>
+                    <div class="control-group">
+                        <label>Shadow Intensity</label>
+                        <input type="range" class="neu-slider" id="shadowIntensity" min="10" max="50" value="30">
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-info neu-inset">
+                <h4>How It Works</h4>
+                <ul>
+                    <li>Light source position affects shadow direction</li>
+                    <li>Dual shadows create the soft, extruded effect</li>
+                    <li>Same-hue colors maintain visual harmony</li>
+                    <li>Rounded corners enhance the organic feel</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usage Guidelines Section -->
+    <section class="section usage-section">
+        <h2 class="section-title neu-text">Usage Guidelines</h2>
+        <p class="section-desc">Best practices for implementing neomorphic design</p>
+
+        <div class="guidelines-grid">
+            <div class="guideline-card neu-raised">
+                <div class="guideline-icon">✓</div>
+                <h4>Do's</h4>
+                <ul>
+                    <li>Use subtle color variations from the background</li>
+                    <li>Maintain consistent light direction</li>
+                    <li>Apply rounded corners generously</li>
+                    <li>Keep adequate spacing between elements</li>
+                    <li>Use for focused, minimal interfaces</li>
+                </ul>
+            </div>
+
+            <div class="guideline-card neu-raised warning">
+                <div class="guideline-icon">✗</div>
+                <h4>Don'ts</h4>
+                <ul>
+                    <li>Don't use high contrast colors</li>
+                    <li>Avoid placing elements too close together</li>
+                    <li>Don't mix multiple light directions</li>
+                    <li>Avoid complex, busy layouts</li>
+                    <li>Don't sacrifice accessibility for aesthetics</li>
+                </ul>
+            </div>
+
+            <div class="guideline-card neu-raised">
+                <div class="guideline-icon">♿</div>
+                <h4>Accessibility</h4>
+                <ul>
+                    <li>Ensure 4.5:1 contrast ratio for text</li>
+                    <li>Add focus states with visible outlines</li>
+                    <li>Provide alternative visual cues</li>
+                    <li>Test with screen readers</li>
+                    <li>Consider reduced motion preferences</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content neu-inset">
+            <p>Neomorphism Style Guide</p>
+            <p class="footer-note">Soft shadows, subtle depth, modern elegance</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span class="toast-message">Color copied!</span>
+    </div>
+
+    <script src="effects.js"></script>
+</body>
+</html>

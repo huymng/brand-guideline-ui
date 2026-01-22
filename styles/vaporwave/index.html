@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaporwave Style Guide | バーポワーブ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- VHS Overlay -->
+    <div class="vhs-overlay"></div>
+    <div class="scanlines"></div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <nav class="nav">
+            <a href="../../index.html" class="nav-back">
+                <span class="arrow">◄</span> Gallery
+            </a>
+            <div class="nav-japanese">バーポワーブ</div>
+            <button class="glitch-toggle" id="glitchToggle">
+                <span>GLITCH</span>
+            </button>
+        </nav>
+
+        <!-- Retro Grid -->
+        <div class="retro-grid"></div>
+
+        <!-- Sun -->
+        <div class="sun">
+            <div class="sun-lines"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1 class="hero-title chrome-text" data-text="VAPORWAVE">
+                <span class="glitch-text">VAPORWAVE</span>
+            </h1>
+            <p class="hero-subtitle vhs-text">アエステティック // A E S T H E T I C</p>
+            <div class="hero-cta">
+                <button class="neon-button pink">EXPLORE</button>
+                <button class="neon-button cyan">DREAM</button>
+            </div>
+        </div>
+
+        <!-- Floating Elements -->
+        <div class="floating-elements">
+            <div class="palm-tree left"></div>
+            <div class="palm-tree right"></div>
+            <div class="bust" id="bust"></div>
+        </div>
+    </header>
+
+    <!-- Color Palette Section -->
+    <section class="section palette-section">
+        <h2 class="section-title">
+            <span class="jp-text">色</span>
+            Color Palette
+        </h2>
+        <p class="section-desc">Neon dreams and sunset memories</p>
+
+        <div class="palette-grid">
+            <div class="palette-card" data-color="#FF71CE">
+                <div class="color-preview" style="background: linear-gradient(180deg, #FF71CE 0%, #FF1493 100%);"></div>
+                <div class="color-info">
+                    <span class="color-name">Hot Pink</span>
+                    <span class="color-hex">#FF71CE</span>
+                </div>
+            </div>
+            <div class="palette-card" data-color="#01CDFE">
+                <div class="color-preview" style="background: linear-gradient(180deg, #01CDFE 0%, #00B4D8 100%);"></div>
+                <div class="color-info">
+                    <span class="color-name">Electric Cyan</span>
+                    <span class="color-hex">#01CDFE</span>
+                </div>
+            </div>
+            <div class="palette-card" data-color="#B967FF">
+                <div class="color-preview" style="background: linear-gradient(180deg, #B967FF 0%, #8B5CF6 100%);"></div>
+                <div class="color-info">
+                    <span class="color-name">Neon Purple</span>
+                    <span class="color-hex">#B967FF</span>
+                </div>
+            </div>
+            <div class="palette-card" data-color="#FFFB96">
+                <div class="color-preview" style="background: linear-gradient(180deg, #FFFB96 0%, #FFD93D 100%);"></div>
+                <div class="color-info">
+                    <span class="color-name">Sunset Yellow</span>
+                    <span class="color-hex">#FFFB96</span>
+                </div>
+            </div>
+            <div class="palette-card" data-color="#05FFA1">
+                <div class="color-preview" style="background: linear-gradient(180deg, #05FFA1 0%, #00D68F 100%);"></div>
+                <div class="color-info">
+                    <span class="color-name">Mint Glow</span>
+                    <span class="color-hex">#05FFA1</span>
+                </div>
+            </div>
+            <div class="palette-card" data-color="#1A1A2E">
+                <div class="color-preview" style="background: linear-gradient(180deg, #1A1A2E 0%, #0F0F1A 100%);"></div>
+                <div class="color-info">
+                    <span class="color-name">Deep Night</span>
+                    <span class="color-hex">#1A1A2E</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Typography Section -->
+    <section class="section typography-section">
+        <h2 class="section-title">
+            <span class="jp-text">字</span>
+            Typography
+        </h2>
+        <p class="section-desc">Digital dreams in chrome and neon</p>
+
+        <div class="typography-showcase">
+            <div class="type-card">
+                <div class="type-preview orbitron">
+                    <span class="type-sample">ORBITRON</span>
+                    <span class="type-weight">Regular 400</span>
+                </div>
+                <p class="type-usage">Futuristic headlines with geometric precision</p>
+            </div>
+
+            <div class="type-card">
+                <div class="type-preview orbitron bold">
+                    <span class="type-sample">ORBITRON</span>
+                    <span class="type-weight">Bold 700</span>
+                </div>
+                <p class="type-usage">Strong emphasis and primary CTAs</p>
+            </div>
+
+            <div class="type-card">
+                <div class="type-preview vt323">
+                    <span class="type-sample">VT323</span>
+                    <span class="type-weight">Regular 400</span>
+                </div>
+                <p class="type-usage">Terminal text, retro digital displays</p>
+            </div>
+        </div>
+
+        <div class="text-effects-demo">
+            <h3 class="demo-label">Text Effects</h3>
+            <div class="effects-grid">
+                <div class="effect-item">
+                    <span class="chrome-text" data-text="CHROME">CHROME</span>
+                    <span class="effect-name">Chrome Effect</span>
+                </div>
+                <div class="effect-item">
+                    <span class="neon-text pink">NEON</span>
+                    <span class="effect-name">Neon Glow</span>
+                </div>
+                <div class="effect-item">
+                    <span class="glitch-text" data-text="GLITCH">GLITCH</span>
+                    <span class="effect-name">Glitch Effect</span>
+                </div>
+                <div class="effect-item">
+                    <span class="outline-text">OUTLINE</span>
+                    <span class="effect-name">Outline Text</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Components Section -->
+    <section class="section components-section">
+        <h2 class="section-title">
+            <span class="jp-text">部</span>
+            Components
+        </h2>
+        <p class="section-desc">Interface elements from a digital paradise</p>
+
+        <div class="components-grid">
+            <!-- Buttons -->
+            <div class="component-group">
+                <h3 class="component-title">Buttons</h3>
+                <div class="component-demo">
+                    <button class="neon-button pink">PINK</button>
+                    <button class="neon-button cyan">CYAN</button>
+                    <button class="neon-button purple">PURPLE</button>
+                    <button class="chrome-button">CHROME</button>
+                </div>
+            </div>
+
+            <!-- Cards -->
+            <div class="component-group wide">
+                <h3 class="component-title">Cards</h3>
+                <div class="component-demo cards-grid">
+                    <div class="vapor-card">
+                        <div class="card-header">
+                            <span class="card-icon">🌴</span>
+                        </div>
+                        <h4>Paradise</h4>
+                        <p>Endless summer in digital form</p>
+                    </div>
+                    <div class="vapor-card">
+                        <div class="card-header">
+                            <span class="card-icon">🗿</span>
+                        </div>
+                        <h4>Classical</h4>
+                        <p>Ancient beauty meets future tech</p>
+                    </div>
+                    <div class="vapor-card">
+                        <div class="card-header">
+                            <span class="card-icon">💿</span>
+                        </div>
+                        <h4>Digital</h4>
+                        <p>Memories stored in neon light</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress Bars -->
+            <div class="component-group">
+                <h3 class="component-title">Loading</h3>
+                <div class="component-demo">
+                    <div class="vapor-progress">
+                        <div class="progress-bar"></div>
+                        <span class="progress-text">LOADING...</span>
+                    </div>
+                    <div class="loading-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input -->
+            <div class="component-group">
+                <h3 class="component-title">Input</h3>
+                <div class="component-demo">
+                    <input type="text" class="vapor-input" placeholder="ENTER TEXT...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo Section -->
+    <section class="section demo-section">
+        <h2 class="section-title">
+            <span class="jp-text">夢</span>
+            Interactive Demo
+        </h2>
+        <p class="section-desc">Experience the aesthetic</p>
+
+        <div class="demo-container">
+            <div class="demo-panel">
+                <div class="demo-screen" id="demoScreen">
+                    <div class="screen-content">
+                        <div class="screen-bust"></div>
+                        <div class="screen-text chrome-text" data-text="AESTHETIC">AESTHETIC</div>
+                        <div class="screen-subtitle">アエステティック</div>
+                    </div>
+                    <div class="screen-scanlines"></div>
+                </div>
+
+                <div class="demo-controls">
+                    <div class="control-row">
+                        <label>VHS Tracking</label>
+                        <input type="range" class="vapor-slider" id="vhsTracking" min="0" max="100" value="30">
+                    </div>
+                    <div class="control-row">
+                        <label>Glitch Intensity</label>
+                        <input type="range" class="vapor-slider" id="glitchIntensity" min="0" max="100" value="20">
+                    </div>
+                    <div class="control-row">
+                        <label>Neon Brightness</label>
+                        <input type="range" class="vapor-slider" id="neonBrightness" min="0" max="100" value="80">
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-info">
+                <h4>// SYSTEM.INFO</h4>
+                <div class="info-terminal">
+                    <p>> STYLE: VAPORWAVE</p>
+                    <p>> ERA: 2010s RETRO-FUTURE</p>
+                    <p>> INFLUENCES: 80s, 90s, JAPAN</p>
+                    <p>> MOOD: NOSTALGIC</p>
+                    <p>> STATUS: <span class="blink">DREAMING_</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usage Guidelines -->
+    <section class="section usage-section">
+        <h2 class="section-title">
+            <span class="jp-text">道</span>
+            Guidelines
+        </h2>
+        <p class="section-desc">The path to digital enlightenment</p>
+
+        <div class="guidelines-grid">
+            <div class="guideline-card do">
+                <h4>✧ DO</h4>
+                <ul>
+                    <li>Use bold neon gradients liberally</li>
+                    <li>Include Japanese text for aesthetic</li>
+                    <li>Add VHS/glitch effects sparingly</li>
+                    <li>Embrace the 80s sunset palette</li>
+                    <li>Use geometric grid perspectives</li>
+                </ul>
+            </div>
+
+            <div class="guideline-card dont">
+                <h4>✗ DON'T</h4>
+                <ul>
+                    <li>Overdo the glitch effects</li>
+                    <li>Use flat, muted colors</li>
+                    <li>Forget the retro-futuristic elements</li>
+                    <li>Skip the atmospheric backgrounds</li>
+                    <li>Use overly modern typefaces</li>
+                </ul>
+            </div>
+
+            <div class="guideline-card tips">
+                <h4>◈ TIPS</h4>
+                <ul>
+                    <li>Layer gradients for depth</li>
+                    <li>Chrome text = instant vaporwave</li>
+                    <li>Greek statues are iconic elements</li>
+                    <li>Palm trees = tropical paradise</li>
+                    <li>Sunset grids define the aesthetic</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-sun"></div>
+            <p class="footer-text chrome-text" data-text="VAPORWAVE">VAPORWAVE</p>
+            <p class="footer-jp">永遠の夢 // ETERNAL DREAMS</p>
+        </div>
+        <div class="footer-grid"></div>
+    </footer>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <span class="toast-message">COPIED!</span>
+    </div>
+
+    <script src="effects.js"></script>
+</body>
+</html>

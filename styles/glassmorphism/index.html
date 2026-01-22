@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism - Brand Style Guidelines</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-gradient">
+        <div class="bg-blob bg-blob--1"></div>
+        <div class="bg-blob bg-blob--2"></div>
+        <div class="bg-blob bg-blob--3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav glass">
+        <a href="../../index.html" class="nav__back">Back to Gallery</a>
+        <span class="nav__title">Glassmorphism</span>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__content glass glass--strong">
+            <span class="hero__badge">Style Guidelines</span>
+            <h1 class="hero__title">Glassmorphism</h1>
+            <p class="hero__description">Frosted glass meets modern UI. Translucent layers that reveal depth while maintaining elegance and clarity.</p>
+            <div class="hero__actions">
+                <button class="btn btn--primary">Get Started</button>
+                <button class="btn btn--glass">Learn More</button>
+            </div>
+        </div>
+        <div class="hero__shapes">
+            <div class="floating-shape floating-shape--1"></div>
+            <div class="floating-shape floating-shape--2"></div>
+            <div class="floating-shape floating-shape--3"></div>
+        </div>
+    </section>
+
+    <!-- Color Palette -->
+    <section class="section" id="colors">
+        <div class="section__header">
+            <span class="section__number">01</span>
+            <h2 class="section__title">Color Palette</h2>
+        </div>
+        <p class="section__intro">Soft gradients and transparency define this aesthetic. Colors should feel ethereal and layered.</p>
+
+        <div class="color-grid">
+            <div class="color-card glass" data-color="rgba(255,255,255,0.25)">
+                <div class="color-card__preview" style="background: rgba(255,255,255,0.25)"></div>
+                <div class="color-card__info">
+                    <span class="color-card__name">Glass White</span>
+                    <span class="color-card__hex">rgba(255,255,255,0.25)</span>
+                    <span class="color-card__use">Card backgrounds</span>
+                </div>
+            </div>
+            <div class="color-card glass" data-color="#667eea">
+                <div class="color-card__preview" style="background: linear-gradient(135deg, #667eea, #764ba2)"></div>
+                <div class="color-card__info">
+                    <span class="color-card__name">Purple Gradient</span>
+                    <span class="color-card__hex">#667EEA → #764BA2</span>
+                    <span class="color-card__use">Primary accent</span>
+                </div>
+            </div>
+            <div class="color-card glass" data-color="#f093fb">
+                <div class="color-card__preview" style="background: linear-gradient(135deg, #f093fb, #f5576c)"></div>
+                <div class="color-card__info">
+                    <span class="color-card__name">Pink Gradient</span>
+                    <span class="color-card__hex">#F093FB → #F5576C</span>
+                    <span class="color-card__use">Secondary accent</span>
+                </div>
+            </div>
+            <div class="color-card glass" data-color="#4facfe">
+                <div class="color-card__preview" style="background: linear-gradient(135deg, #4facfe, #00f2fe)"></div>
+                <div class="color-card__info">
+                    <span class="color-card__name">Cyan Gradient</span>
+                    <span class="color-card__hex">#4FACFE → #00F2FE</span>
+                    <span class="color-card__use">Info & links</span>
+                </div>
+            </div>
+            <div class="color-card glass" data-color="#ffffff">
+                <div class="color-card__preview" style="background: #ffffff"></div>
+                <div class="color-card__info">
+                    <span class="color-card__name">Pure White</span>
+                    <span class="color-card__hex">#FFFFFF</span>
+                    <span class="color-card__use">Text & icons</span>
+                </div>
+            </div>
+            <div class="color-card glass" data-color="rgba(255,255,255,0.6)">
+                <div class="color-card__preview" style="background: rgba(255,255,255,0.6)"></div>
+                <div class="color-card__info">
+                    <span class="color-card__name">Light Text</span>
+                    <span class="color-card__hex">rgba(255,255,255,0.6)</span>
+                    <span class="color-card__use">Secondary text</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copy-toast glass" id="copyToast">Copied to clipboard</div>
+    </section>
+
+    <!-- Typography -->
+    <section class="section" id="typography">
+        <div class="section__header">
+            <span class="section__number">02</span>
+            <h2 class="section__title">Typography</h2>
+        </div>
+        <p class="section__intro">Poppins provides the perfect balance of friendliness and professionalism for glass interfaces.</p>
+
+        <div class="type-showcase">
+            <div class="type-card glass glass--strong">
+                <span class="type-card__label">Primary Typeface</span>
+                <h3 class="type-card__name">Poppins</h3>
+                <p class="type-card__sample">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                <p class="type-card__sample">abcdefghijklmnopqrstuvwxyz</p>
+                <p class="type-card__sample">0123456789 !@#$%^&*()</p>
+                <div class="type-card__weights">
+                    <span class="weight-300">Light</span>
+                    <span class="weight-400">Regular</span>
+                    <span class="weight-500">Medium</span>
+                    <span class="weight-600">Semibold</span>
+                    <span class="weight-700">Bold</span>
+                </div>
+                <a href="https://fonts.google.com/specimen/Poppins" class="type-card__link" target="_blank">Get Poppins</a>
+            </div>
+        </div>
+
+        <div class="type-scale glass">
+            <h4 class="type-scale__title">Type Scale</h4>
+            <div class="type-scale__item">
+                <span class="type-scale__preview display">Display</span>
+                <span class="type-scale__meta">48px / Semibold</span>
+            </div>
+            <div class="type-scale__item">
+                <span class="type-scale__preview h1">Heading 1</span>
+                <span class="type-scale__meta">36px / Semibold</span>
+            </div>
+            <div class="type-scale__item">
+                <span class="type-scale__preview h2">Heading 2</span>
+                <span class="type-scale__meta">28px / Semibold</span>
+            </div>
+            <div class="type-scale__item">
+                <span class="type-scale__preview h3">Heading 3</span>
+                <span class="type-scale__meta">22px / Medium</span>
+            </div>
+            <div class="type-scale__item">
+                <span class="type-scale__preview body">Body text for content</span>
+                <span class="type-scale__meta">16px / Regular</span>
+            </div>
+            <div class="type-scale__item">
+                <span class="type-scale__preview small">Small supporting text</span>
+                <span class="type-scale__meta">14px / Regular</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Components -->
+    <section class="section" id="components">
+        <div class="section__header">
+            <span class="section__number">03</span>
+            <h2 class="section__title">Components</h2>
+        </div>
+        <p class="section__intro">Glass components that feel tangible yet ethereal. Blur and transparency create depth.</p>
+
+        <div class="component-group">
+            <h3 class="component-group__title">Buttons</h3>
+            <div class="component-row">
+                <button class="btn btn--primary">Primary</button>
+                <button class="btn btn--glass">Glass</button>
+                <button class="btn btn--outline">Outline</button>
+                <button class="btn btn--primary" disabled>Disabled</button>
+            </div>
+        </div>
+
+        <div class="component-group">
+            <h3 class="component-group__title">Form Inputs</h3>
+            <div class="component-row">
+                <input type="text" class="input glass" placeholder="Enter your name...">
+                <select class="select glass">
+                    <option>Select option</option>
+                    <option>Option A</option>
+                    <option>Option B</option>
+                    <option>Option C</option>
+                </select>
+            </div>
+            <div class="component-row">
+                <label class="checkbox">
+                    <input type="checkbox" checked>
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__label">Enable notifications</span>
+                </label>
+                <label class="toggle">
+                    <input type="checkbox" checked>
+                    <span class="toggle__track"></span>
+                    <span class="toggle__label">Dark mode</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="component-group">
+            <h3 class="component-group__title">Cards</h3>
+            <div class="card-grid">
+                <div class="card glass">
+                    <div class="card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h4 class="card__title">Real-time Updates</h4>
+                    <p class="card__text">Stay synchronized with instant data refresh across all your devices.</p>
+                </div>
+                <div class="card glass">
+                    <div class="card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h4 class="card__title">Secure by Design</h4>
+                    <p class="card__text">End-to-end encryption ensures your data remains private and protected.</p>
+                </div>
+                <div class="card glass">
+                    <div class="card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="17,8 12,3 7,8"/>
+                            <line x1="12" y1="3" x2="12" y2="15"/>
+                        </svg>
+                    </div>
+                    <h4 class="card__title">Cloud Sync</h4>
+                    <p class="card__text">Access your work anywhere with seamless cloud synchronization.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="component-group">
+            <h3 class="component-group__title">Tags & Badges</h3>
+            <div class="component-row">
+                <span class="tag glass">Default</span>
+                <span class="tag tag--primary">Primary</span>
+                <span class="tag tag--success">Success</span>
+                <span class="tag tag--warning">Warning</span>
+                <span class="badge">New</span>
+                <span class="badge badge--dot">3</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usage Guidelines -->
+    <section class="section" id="usage">
+        <div class="section__header">
+            <span class="section__number">04</span>
+            <h2 class="section__title">Usage Guidelines</h2>
+        </div>
+        <p class="section__intro">Master the art of frosted glass interfaces with these principles.</p>
+
+        <div class="guidelines-grid">
+            <div class="guideline guideline--do glass">
+                <h4 class="guideline__title">Do</h4>
+                <ul class="guideline__list">
+                    <li>Use colorful, gradient backgrounds behind glass</li>
+                    <li>Apply blur (8-20px) for the frosted effect</li>
+                    <li>Add subtle borders (1px white at 20% opacity)</li>
+                    <li>Use shadows to lift elements off the background</li>
+                    <li>Maintain sufficient contrast for readability</li>
+                    <li>Layer multiple glass elements at different depths</li>
+                </ul>
+            </div>
+            <div class="guideline guideline--dont glass">
+                <h4 class="guideline__title">Don't</h4>
+                <ul class="guideline__list">
+                    <li>Use glass on plain white/solid backgrounds</li>
+                    <li>Stack too many blur layers (performance hit)</li>
+                    <li>Make text too transparent to read</li>
+                    <li>Forget about accessibility contrast ratios</li>
+                    <li>Overuse the effect on every element</li>
+                    <li>Ignore browser support for backdrop-filter</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="use-cases glass">
+            <h4 class="use-cases__title">Perfect For</h4>
+            <div class="use-cases__grid">
+                <span class="use-case">Music Apps</span>
+                <span class="use-case">Weather Apps</span>
+                <span class="use-case">Landing Pages</span>
+                <span class="use-case">Dashboards</span>
+                <span class="use-case">Mobile UI</span>
+                <span class="use-case">Portfolios</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo -->
+    <section class="section" id="demo">
+        <div class="section__header">
+            <span class="section__number">05</span>
+            <h2 class="section__title">Interactive Demo</h2>
+        </div>
+        <p class="section__intro">Move your mouse to see the light refraction effect on glass elements.</p>
+
+        <div class="demo-area">
+            <div class="demo-glass glass glass--strong" id="demoGlass">
+                <h3 class="demo-glass__title">Glass Card</h3>
+                <p class="demo-glass__text">Move your cursor around to see how light interacts with the glass surface.</p>
+                <div class="demo-glass__shine" id="glassShine"></div>
+            </div>
+
+            <div class="demo-controls glass">
+                <div class="demo-control">
+                    <label class="demo-control__label">Blur Intensity</label>
+                    <input type="range" class="slider" id="blurSlider" min="0" max="30" value="16">
+                    <span class="demo-control__value" id="blurValue">16px</span>
+                </div>
+                <div class="demo-control">
+                    <label class="demo-control__label">Opacity</label>
+                    <input type="range" class="slider" id="opacitySlider" min="10" max="50" value="25">
+                    <span class="demo-control__value" id="opacityValue">25%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass">
+        <div class="footer__content">
+            <p class="footer__title">Glassmorphism Style Guidelines</p>
+            <p class="footer__credits">Typography: Poppins via Google Fonts</p>
+            <a href="../../index.html" class="footer__link">Back to Gallery</a>
+        </div>
+    </footer>
+
+    <script src="effects.js"></script>
+</body>
+</html>
